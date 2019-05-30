@@ -1,55 +1,81 @@
-<template>
-  <div>
-    <nuxt />
-  </div>
+<template lang="pug">
+  .container
+    p hello, world
+      //- modal(v-if="showModal || opening" @close="showModal = false")
+      //- div(class="navi navi-side")
+      //-   navibar
+      //- div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
+      //-   my-menu
+      //- .main
+      //-   .main-content
+      //-     nuxt
+      //-     myFooter
 </template>
 
-<style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
-}
+<script>
+// import Navibar from '~/components/Navibar.vue'
+// import MyMenu from '~/components/MyMenu.vue'
+// import MyFooter from '~/components/MyFooter.vue'
+// import Modal from '~/components/Modal.vue'
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+export default {
+  components: {
+    // Navibar,
+    // MyMenu,
+    // Modal,
+    // MyFooter
+  },
+  mounted: function() {
+    // this.$store.state.opening = false
+  },
+  computed: {
+    // opening() { return this.$store.state.opening },
+    // showModal() { return this.$store.state.modal },
+  }
 }
+</script>
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
+<style lang="stylus" scoped>
+.container
+  position relative
+  margin-left auto
+  margin-right auto
+  @media screen and (max-width: 500px)
+    width 100%
+  @media screen and (min-width: 500px)
+    max-width 1080px
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
+.main
+  width 100%
+  overflow hidden
+  @media screen and (max-width: 900px)
+    padding-top 70px
+  @media screen and (min-width: 900px)
+    padding-left 200px
+  &-content
+    position absolute
+    @media screen and (max-width: 900px)
+      width 100%
+    @media screen and (min-width: 900px)
+      width 75%
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+.navi
+  z-index 1
+.navi-side
+  @media screen and (max-width: 900px)
+    display none
+  @media screen and (min-width: 900px)
+    position fixed
+    top 40%
+    left 0
+    width 25%
+.navi-head
+  @media screen and (max-width: 900px)
+    position fixed
+    top 5%
+    right 10%
+  @media screen and (min-width: 900px)
+    display none
+.navi_menu-open
+  z-index 100
 </style>
