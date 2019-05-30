@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    p hello, world
+    p みやぎプロコン
       //- modal(v-if="showModal || opening" @close="showModal = false")
       //- div(class="navi navi-side")
       //-   navibar
