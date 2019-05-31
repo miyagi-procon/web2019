@@ -6,16 +6,16 @@
       //-   navibar
       //- div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
       //-   my-menu
-      //- .main
-      //-   .main-content
-      //-     nuxt
-      //-     myFooter
+      .main
+        .main-content
+          nuxt
+          myFooter
 </template>
 
 <script>
 // import Navibar from '~/components/Navibar.vue'
 // import MyMenu from '~/components/MyMenu.vue'
-// import MyFooter from '~/components/MyFooter.vue'
+import MyFooter from '~/components/MyFooter.vue'
 // import Modal from '~/components/Modal.vue'
 
 export default {
@@ -23,7 +23,7 @@ export default {
     // Navibar,
     // MyMenu,
     // Modal,
-    // MyFooter
+    MyFooter
   },
   mounted: function() {
     // this.$store.state.opening = false
