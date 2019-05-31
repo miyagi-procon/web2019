@@ -29,7 +29,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    // { src: '~plugins/vue-scrollto' },
+    { src: '~plugins/windowState', ssr: false },
+  ],
 
   /*
    ** Nuxt.js modules
