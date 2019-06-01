@@ -1,10 +1,15 @@
 <template lang="pug">
-  .top_container
-    p hello
+  top
 </template>
 
 <script>
-export default {}
+import Top from '~/pages/Top.vue'
+
+export default {
+  components: {
+    Top
+  }
+}
 </script>
 
 <style lang="stylus" scoped></style>

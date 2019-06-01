@@ -1,15 +1,14 @@
 <template lang="pug">
   .container
-    p みやぎプロコン
-      //- modal(v-if="showModal || opening" @close="showModal = false")
-      //- div(class="navi navi-side")
-      //-   navibar
-      //- div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
-      //-   my-menu
-      .main
-        .main-content
-          nuxt
-          myFooter
+    //- modal(v-if="showModal || opening" @close="showModal = false")
+    //- div(class="navi navi-side")
+    //-   navibar
+    //- div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
+    //-   my-menu
+    .main
+      .main-content
+        nuxt
+        myFooter
 </template>
 
 <script>
@@ -48,16 +47,9 @@ export default {
 .main
   width 100%
   overflow hidden
-  @media screen and (max-width: 900px)
-    padding-top 70px
-  @media screen and (min-width: 900px)
-    padding-left 200px
   &-content
     position absolute
-    @media screen and (max-width: 900px)
-      width 100%
-    @media screen and (min-width: 900px)
-      width 75%
+    width 100%
 
 .navi
   z-index 1
