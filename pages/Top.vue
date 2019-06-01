@@ -86,9 +86,9 @@ export default {
   position relative
   &>img
     display inline-block
-    @media screen and (max-width: 900px)
+    @media screen and (max-width: 1080px)
       width 70%
-    @media screen and (min-width: 900px)
+    @media screen and (min-width: 1080px)
       width 50%
   &>p
     position absolute
@@ -97,15 +97,29 @@ export default {
     // font-weight 600
     padding 1rem
     text-align center
-    bottom 20%
     letter-spacing 0.1rem
+    @media screen and (max-width: 1080px)
+      bottom 20%
+    @media screen and (min-width: 1080px)
+      top 0
+      width 50%
+      height calc(100% - 4px)
+      display flex
+      align-items center
+      justify-content center
   &-one
     &>p
       background-color theme-blue
-      left 0
+      @media screen and (max-width: 1080px)
+        left 0
+      @media screen and (min-width: 1080px)
+        right 0
   &-two
     text-align right
     &>p
       background-color theme-orange
-      right 0
+      @media screen and (max-width: 1080px)
+        right 0
+      @media screen and (min-width: 1080px)
+        left 0
 </style>
