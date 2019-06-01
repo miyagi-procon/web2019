@@ -1,8 +1,11 @@
 <template lang="pug">
   section#top
-    .top_right
-    .top_left
-    img#logo(src="~/assets/images/logo.png")
+    .title
+      .top_right
+      .top_left
+      img#logo(src="~assets/images/logo.png")
+    //- .top_image
+    //-   img(src="~/assets/images/top1.jpg")
 </template>
 
 <script>
@@ -33,30 +36,47 @@ export default {
 
 <style lang="stylus" scoped>
 #top
-  width 30vmin
-  height 30vmin
+  width 100%
+
+.title
+  background-image url('~assets/images/top1.jpg')
+  background-size cover
+  width 100%
+  max-height calc(1080px * 2/ 3)
+  height calc(100vw * 2 / 3)
+  position relative
+  display flex
+  align-items center
+  justify-content center
 
 #logo
-  width 60vmin
-  height 60vmin
-  position absolute
-  top calc(50% - 30vmin)
-  left calc(50% - 30vmin)
+  width 40vw
+  height 40vw
+  max-width calc(1080px * 0.4)
+  max-height calc(1080px * 0.4)
   margin-top 0
 
 .top_right
   position absolute
   background-color theme-orange
-  width 30vmin
-  height 30vmin
-  top 0
+  width 20vw
+  height 20vw
+  max-width calc(1080px * 0.2)
+  max-height calc(1080px * 0.2)
+  bottom 0
   right 0
 
 .top_left
   position absolute
   background-color theme-blue
-  width 30vmin
-  height 30vmin
-  bottom 0
+  width 20vw
+  height 20vw
+  max-width calc(1080px * 0.2)
+  max-height calc(1080px * 0.2)
+  top 0
   left 0
+
+.top_image
+  width 100%
+  height 100%
 </style>
