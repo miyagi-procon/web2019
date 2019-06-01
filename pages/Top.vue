@@ -4,8 +4,12 @@
       .top_right
       .top_left
       img#logo(src="~assets/images/logo.png")
-    //- .top_image
-    //-   img(src="~/assets/images/top1.jpg")
+    .top_image.top_image-one
+      img(src="~assets/images/top2.jpg")
+      p まっさらな０、可能性の１歩。
+    .top_image.top_image-two
+      img(src="~assets/images/top3.jpg")
+      p ０が１に変わるよろこびを。
 </template>
 
 <script>
@@ -77,6 +81,31 @@ export default {
   left 0
 
 .top_image
+  margin-top 100px
   width 100%
-  height 100%
+  position relative
+  &>img
+    display inline-block
+    @media screen and (max-width: 900px)
+      width 70%
+    @media screen and (min-width: 900px)
+      width 50%
+  &>p
+    position absolute
+    color BG-color
+    font-size 2rem
+    // font-weight 600
+    padding 1rem
+    text-align center
+    bottom 20%
+    letter-spacing 0.1rem
+  &-one
+    &>p
+      background-color theme-blue
+      left 0
+  &-two
+    text-align right
+    &>p
+      background-color theme-orange
+      right 0
 </style>

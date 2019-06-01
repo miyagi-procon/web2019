@@ -39,10 +39,11 @@ export default {
   position relative
   margin-left auto
   margin-right auto
-  @media screen and (max-width: 900px)
-    width 100%
-  @media screen and (min-width: 900px)
-    max-width 1080px
+  width 100%
+  // @media screen and (max-width: 900px)
+  //   width 100%
+  // @media screen and (min-width: 900px)
+  //   max-width 1080px
 
 .main
   width 100%
