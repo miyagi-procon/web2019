@@ -1,4 +1,5 @@
 import pkg from './package'
+import { resolve } from 'path'
 
 export default {
   mode: 'spa',
@@ -37,7 +38,9 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: [],
+  modules: [
+    ['nuxt-stylus-resources-loader', resolve(__dirname, 'assets/stylus/**/*.styl')],
+  ],
 
   /*
    ** Build configuration

@@ -3,7 +3,6 @@
     .top_right
     .top_left
     img#logo(src="~/assets/images/logo.png")
-    //- p(class="top_text") ようこそ!<br/>thinkShake製作所はwebエンジニア高橋翔太の個人企業です。
 </template>
 
 <script>
@@ -47,7 +46,7 @@ export default {
 
 .top_right
   position absolute
-  background-color rgb(231, 119, 34)
+  background-color theme-orange
   width 30vmin
   height 30vmin
   top 0
@@ -55,7 +54,7 @@ export default {
 
 .top_left
   position absolute
-  background-color rgb(116, 181, 228)
+  background-color theme-blue
   width 30vmin
   height 30vmin
   bottom 0
