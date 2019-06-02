@@ -4,12 +4,6 @@
       .top_right
       .top_left
       img#logo(src="~assets/images/logo.png")
-    .top_image.top_image-one
-      img(src="~assets/images/top2.jpg")
-      p まっさらな０、可能性の１歩。
-    .top_image.top_image-two
-      img(src="~assets/images/top3.jpg")
-      p ０が１に変わるよろこびを。
 </template>
 
 <script>
@@ -19,6 +13,7 @@ export default {}
 <style lang="stylus" scoped>
 #top
   width 100%
+  margin-bottom 50vmin
 
 .title
   background-image url('~assets/images/top1.jpg')
@@ -57,47 +52,4 @@ export default {}
   max-height calc(1080px * 0.2)
   top 0
   left 0
-
-.top_image
-  margin-top 100px
-  width 100%
-  position relative
-  &>img
-    display inline-block
-    @media screen and (max-width: 1080px)
-      width 70%
-    @media screen and (min-width: 1080px)
-      width 50%
-  &>p
-    position absolute
-    color BG-color
-    font-size 2rem
-    // font-weight 600
-    padding 1rem
-    text-align center
-    letter-spacing 0.1rem
-    @media screen and (max-width: 1080px)
-      bottom 20%
-    @media screen and (min-width: 1080px)
-      top 0
-      width 50%
-      height calc(100% - 4px)
-      display flex
-      align-items center
-      justify-content center
-  &-one
-    &>p
-      background-color theme-blue
-      @media screen and (max-width: 1080px)
-        left 0
-      @media screen and (min-width: 1080px)
-        right 0
-  &-two
-    text-align right
-    &>p
-      background-color theme-orange
-      @media screen and (max-width: 1080px)
-        right 0
-      @media screen and (min-width: 1080px)
-        left 0
 </style>
