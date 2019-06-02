@@ -13,29 +13,7 @@
 </template>
 
 <script>
-export default {
-  computed: {
-    isActive() {
-      if (process.browser) {
-        return this.$window.scrollY === 0
-      } else {
-        return false
-      }
-    },
-    marginTop() {
-      if (process.browser) {
-        let base = 168
-        if (this.$window.height < 500) base = 201
-        return this.$window.height / 2 - base
-      } else {
-        return 0
-      }
-    }
-  },
-  mounted: function() {
-    document.getElementById('logo').classList.add('img_opening')
-  }
-}
+export default {}
 </script>
 
 <style lang="stylus" scoped>

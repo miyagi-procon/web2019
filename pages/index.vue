@@ -1,13 +1,17 @@
 <template lang="pug">
-  top
+  div
+    top
+    about
 </template>
 
 <script>
 import Top from '~/pages/Top.vue'
+import About from '~/pages/About.vue'
 
 export default {
   components: {
-    Top
+    Top,
+    About
   }
 }
 </script>
