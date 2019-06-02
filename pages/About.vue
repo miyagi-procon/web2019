@@ -1,8 +1,11 @@
 <template lang="pug">
   section#about
     .about_wrapper
-      h1.about_title 「みやぎプロコン」とは
-      p.about_text カクカクしかじか
+      h1.about_title 「みやぎプロコン」って？
+      p.about_text 宮城県の小中学生を対象としたプログラミングコンテストです。
+        <br/>作品を作り、発表し、仲間と触れ合う。
+        <br/>応募だけが目的のコンテストではなく、このイベントを通じてプログラミングやものづくりに触れてもらいたいと願っています。
+        <br/>創造性豊かな人材が多く輩出されますように！
     .about_image.about_image-one(v-bind:class="{ show: !toggleImage }")
       img(src="~assets/images/top2.jpg")
       p まっさらな０、可能性の１歩。
@@ -42,21 +45,24 @@ export default {
   margin-bottom 500vmin
 
 .about_wrapper
-  width 100%
-  max-width WIDTH_MAX
+  width 80%
+  max-width 740px
   display flex
   flex-direction column
   justify-content center
-  align-items center
+  align-items flex-start
   margin 0 auto
 
 .about_title
   font-size 2rem
   letter-spacing 0.1rem
   font-weight 600
+  margin-bottom 2rem
+  background: linear-gradient(transparent 70%, THEME_ORANGE 30%);
 
 .about_text
-  font-size 1rem
+  font-size 1.3rem
+  line-height 2.5rem
 
 .about_image
   margin-top 100px

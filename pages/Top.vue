@@ -13,7 +13,7 @@ export default {}
 <style lang="stylus" scoped>
 #top
   width 100%
-  margin-bottom 50vmin
+  margin-bottom 40vmin
 
 .title
   background-image url('~assets/images/top1.jpg')
