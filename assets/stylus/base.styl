@@ -1,9 +1,10 @@
 // -- variable --
-base-color = rgb(35, 24, 21)
-theme-orange = rgb(231, 119, 34)
-theme-blue = rgb(116, 181, 228)
-theme-gray = rgb(181, 181, 182)
-BG-color = rgb(255, 255, 255)
+BASE_COLOR = rgb(35, 24, 21)
+THEME_ORANGE = rgb(231, 119, 34)
+THEME_BLUE = rgb(116, 181, 228)
+THEME_GRAY = rgb(181, 181, 182)
+BG_COLOR = rgb(255, 255, 255)
+WIDTH_MAX = 1023px
 
 // --- base ---
 html
@@ -13,8 +14,8 @@ html
   -moz-osx-font-smoothing grayscale
   -webkit-font-smoothing antialiased
   box-sizing border-box
-  color base-color
-  background-color BG-color
+  color BASE_COLOR
+  background-color BG_COLOR
   @media screen and (max-width: 400px)
     font-size 10px
   @media screen and (min-width: 400px) and (max-width: 600px)
@@ -42,7 +43,7 @@ img
 table
   border-collapse collapse
   & th
-    background-color base-color
+    background-color BASE_COLOR
     color white
     font-weight normal
   & th, & td

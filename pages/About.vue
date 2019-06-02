@@ -43,7 +43,7 @@ export default {
 
 .about_wrapper
   width 100%
-  max-width 1080px
+  max-width WIDTH_MAX
   display flex
   flex-direction column
   justify-content center
@@ -66,21 +66,21 @@ export default {
   -webkit-transition all .5s
   &>img
     display inline-block
-    @media screen and (max-width: 1080px)
+    @media screen and (max-width: WIDTH_MAX)
       width 70%
-    @media screen and (min-width: 1080px)
+    @media screen and (min-width: WIDTH_MAX)
       width 50%
   &>p
     position absolute
-    color BG-color
+    color BG_COLOR
     font-size 2rem
     // font-weight 600
     padding 1rem
     text-align center
     letter-spacing 0.1rem
-    @media screen and (max-width: 1080px)
+    @media screen and (max-width: WIDTH_MAX)
       bottom 20%
-    @media screen and (min-width: 1080px)
+    @media screen and (min-width: WIDTH_MAX)
       top 0
       width 50%
       height calc(100% - 4px)
@@ -89,18 +89,18 @@ export default {
       justify-content center
   &-one
     &>p
-      background-color theme-blue
-      @media screen and (max-width: 1080px)
+      background-color THEME_BLUE
+      @media screen and (max-width: WIDTH_MAX)
         left 0
-      @media screen and (min-width: 1080px)
+      @media screen and (min-width: WIDTH_MAX)
         right 0
   &-two
     text-align right
     &>p
-      background-color theme-orange
-      @media screen and (max-width: 1080px)
+      background-color THEME_ORANGE
+      @media screen and (max-width: WIDTH_MAX)
         right 0
-      @media screen and (min-width: 1080px)
+      @media screen and (min-width: WIDTH_MAX)
         left 0
 
 .show
