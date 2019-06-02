@@ -34,7 +34,7 @@ export default {
   },
   computed: {
     toggleImage() {
-      return this.isShown(250)
+      return this.isShown(400)
     }
   }
 }
@@ -42,7 +42,10 @@ export default {
 
 <style lang="stylus" scoped>
 #about
-  margin-bottom 40vmin
+  @media screen and (max-width: WIDTH_MAX)
+    margin-bottom calc(100vw)
+  @media screen and (min-width: WIDTH_MAX)
+    margin-bottom calc(70vw)
 
 .about_wrapper
   width 80%

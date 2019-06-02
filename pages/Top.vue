@@ -19,7 +19,7 @@ export default {}
   background-image url('~assets/images/top1.jpg')
   background-size cover
   width 100%
-  max-height calc(WIDTH_MAX * 2/ 3)
+  max-height 100vh
   height calc(100vw * 2 / 3)
   position relative
   display flex
