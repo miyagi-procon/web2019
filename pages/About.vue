@@ -5,7 +5,7 @@
       p.about_text 宮城県の小中学生を対象としたプログラミングコンテストです。
         <br/>作品を作り、発表し、仲間と触れ合う。
         <br/>応募だけが目的のコンテストではなく、このイベントを通じてプログラミングやものづくりに触れてもらいたいと願っています。
-        <br/>創造性豊かな人材が多く輩出されますように！
+        <br/>初心者大歓迎！気軽な気持ちで始めてみよう！
     .about_image.about_image-one(v-bind:class="{ show: !toggleImage }")
       img(src="~assets/images/top2.jpg")
       p まっさらな０、可能性の１歩。
@@ -42,7 +42,7 @@ export default {
 
 <style lang="stylus" scoped>
 #about
-  margin-bottom 500vmin
+  margin-bottom 40vmin
 
 .about_wrapper
   width 80%
