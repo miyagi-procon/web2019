@@ -3,19 +3,44 @@
     .about_wrapper
       h1.about_title 「みやぎプロコン」とは
       p.about_text カクカクしかじか
-    .about_image.about_image-one
+    .about_image.about_image-one(v-bind:class="{ show: !toggleImage }")
       img(src="~assets/images/top2.jpg")
       p まっさらな０、可能性の１歩。
-    .about_image.about_image-two
+    .about_image.about_image-two(v-bind:class="{ show: toggleImage }")
       img(src="~assets/images/top3.jpg")
       p ０が１に変わるよろこびを。
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    isShown: function(togglePos) {
+      if (process.browser) {
+        const [topPos] = this.$window.getElementPos(
+          'about',
+          this.centerOfWindow()
+        )
+        return topPos + togglePos <= this.$window.scrollY
+      } else {
+        return false
+      }
+    },
+    centerOfWindow: function() {
+      return process.browser ? this.$window.height / 2 : 0
+    }
+  },
+  computed: {
+    toggleImage() {
+      return this.isShown(250)
+    }
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
+#about
+  margin-bottom 500vmin
+
 .about_wrapper
   width 100%
   max-width 1080px
@@ -33,11 +58,12 @@ export default {}
 .about_text
   font-size 1rem
 
-
 .about_image
   margin-top 100px
   width 100%
-  position relative
+  position absolute
+  opacity 0
+  -webkit-transition all .5s
   &>img
     display inline-block
     @media screen and (max-width: 1080px)
@@ -76,4 +102,8 @@ export default {}
         right 0
       @media screen and (min-width: 1080px)
         left 0
+
+.show
+  -webkit-transform translate(0px, 0)
+  opacity 1
 </style>
