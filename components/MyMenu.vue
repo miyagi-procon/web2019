@@ -8,13 +8,15 @@
     nav(class="menu_wrapper" v-bind:class="{ 'menu_wrapper-open': $store.state.toggleMenu }")
       ul(class='menu_items')
         li
-          a(href="#" class="menu_item" @click.stop.prevent="aboutClick") about
+          a(href="#" class="menu_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
         li
-          a(href="#" class="menu_item" @click.stop.prevent="worksClick") works
+          a(href="#" class="menu_item" @click.stop.prevent="applicationClick") 募集内容
         li
-          a(href="#" class="menu_item" @click.stop.prevent="skillsClick") skills
+          a(href="#" class="menu_item" @click.stop.prevent="scheduleClick") スケジュール
         li
-          a(href="#" class="menu_item" @click.stop.prevent="contactClick") contact
+          a(href="#" class="menu_item" @click.stop.prevent="workshopClick") ワークショップ
+        li
+          a(href="#" class="menu_item" @click.stop.prevent="storiesClick") コンセプトストーリー
 </template>
 
 <script>
@@ -34,14 +36,17 @@ export default {
     aboutClick: function() {
       this.topClick('about')
     },
-    worksClick: function() {
-      this.topClick('works')
+    applicationClick: function() {
+      this.topClick('application')
     },
-    skillsClick: function() {
-      this.topClick('skills')
+    storiesClick: function() {
+      this.topClick('stories')
     },
-    contactClick: function() {
-      this.topClick('contact')
+    scheduleClick: function() {
+      this.topClick('schedule')
+    },
+    workshopClick: function() {
+      this.topClick('workshop')
     },
     topClick: function(buttonName) {
       this.closeMenu()
@@ -73,6 +78,7 @@ export default {
   top 10%
   left 10%
   height 70%
+  font-weight 600
   flex-direction column
   align-items flex-start
   justify-content space-around
@@ -90,14 +96,12 @@ export default {
   padding 0
 
 .menu_item
-  font-size 4rem
-  color BASE_COLOR
+  font-size 2rem
+  color BG_COLOR
   text-decoration none
   -webkit-transition all .5s
-  &:hover
-    color primary-color
   &:active
-    color primary-color
+    color BG_COLOR
 
 .menu_line-top
   top 0px
@@ -123,15 +127,15 @@ export default {
     width 0
     opacity 0
     transform translateX(20px) rotate(90deg)
-    background-color BASE_COLOR
+    background-color BG_COLOR
   // 上の線
   &.menu_line-middle
     width 30px
     transform translateY(5px) rotate(-135deg)
-    background-color BASE_COLOR
+    background-color BG_COLOR
   // 下の線
   &.menu_line-bottom
     width 30px
     transform translateY(-5px) rotate(135deg)
-    background-color BASE_COLOR
+    background-color BG_COLOR
 </style>

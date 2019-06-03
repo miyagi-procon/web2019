@@ -1,6 +1,6 @@
 <template lang="pug">
   .container
-    //- modal(v-if="showModal || opening" @close="showModal = false")
+    modal(v-if="showModal || opening" @close="showModal = false")
     div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
       my-menu
     .main
@@ -10,24 +10,26 @@
 </template>
 
 <script>
-// import Navibar from '~/components/Navibar.vue'
 import MyMenu from '~/components/MyMenu.vue'
 import MyFooter from '~/components/MyFooter.vue'
-// import Modal from '~/components/Modal.vue'
+import Modal from '~/components/Modal.vue'
 
 export default {
   components: {
-    // Navibar,
     MyMenu,
-    // Modal,
+    Modal,
     MyFooter
   },
   mounted: function() {
-    // this.$store.state.opening = false
+    this.$store.state.opening = false
   },
   computed: {
-    // opening() { return this.$store.state.opening },
-    // showModal() { return this.$store.state.modal },
+    opening() {
+      return this.$store.state.opening
+    },
+    showModal() {
+      return this.$store.state.modal
+    }
   }
 }
 </script>
