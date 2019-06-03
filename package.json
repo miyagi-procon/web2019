@@ -20,7 +20,8 @@
     "pug": "^2.0.3",
     "pug-plain-loader": "^1.0.0",
     "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "stylus-loader": "^3.0.2",
+    "vue-scrollto": "^2.15.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",
