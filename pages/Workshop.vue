@@ -1,9 +1,9 @@
 <template lang="pug">
   section#workshop
     .workshop_wrapper
-      h1.workshop_title ワークショップ
+      h1.heading ワークショップ
       p.workshop_text 関連ワークショップも続々開催！<br/>まずは参加してみよう！
-      p.workshop_text comming soon...
+      p.workshop_text ※詳細は随時発表
 </template>
 
 <script>

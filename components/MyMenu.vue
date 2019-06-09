@@ -10,7 +10,7 @@
         li
           a(href="#" class="menu_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
         li
-          a(href="#" class="menu_item" @click.stop.prevent="applicationClick") 募集内容
+          a(href="#" class="menu_item" @click.stop.prevent="applicationClick") 応募について
         li
           a(href="#" class="menu_item" @click.stop.prevent="scheduleClick") スケジュール
         li

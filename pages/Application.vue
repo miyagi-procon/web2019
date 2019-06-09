@@ -1,7 +1,7 @@
 <template lang="pug">
   section#application
     .wrapper(class="unvisible" v-bind:class="{ show: showSection }")
-      h1.heading 応募概要
+      h1.heading 応募について
       .application_description
         p.text 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
           <br/>プログラミングに触れたことがない初心者も大歓迎です。
