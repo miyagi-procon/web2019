@@ -1,8 +1,25 @@
 <template lang="pug">
   section#application
     .application_wrapper
-      h1.application_title 募集内容
-      p.application_text comming soon...
+      h1.application_title 応募概要
+      p.application_text 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
+        <br/>プログラミングに触れたことがない初心者も大歓迎です。
+        <br/>各地で実施する関連ワークショップに参加して、挑戦してみよう。
+      p.application_text 最終審査会＆表彰式は、10月27日(日)仙台高等専門学校広瀬キャンパスで開催！
+        <br/>賞品には、ノートパソコンやタブレットなど豪華な副賞も多数！
+      p.application_text ●募集内容
+        <br/>テーマ：自由
+        <br/>オリジナルのブログラム作品であれば、ジャンルや言語、作成ツールは問いません。
+        <br/>・ゲームやアプリなどのソフトウェア
+        <br/>・ロボットや電子工作などのハードウェア
+        <br/>・PCやスマートフォン、タブレットで動作するwebプログラム 等
+        <br/>自由な発想と組合せで作品をつくって気軽に応募しよう！
+      p.application_text ●応募資格
+        <br/>宮城県の小学生・中学生(隣県も可)
+        <br/>・2人以上のチームでつくった作品でも応募可
+        <br/>・1人（1チーム）何作品でも応募可（※但しノミネートは1作品のみ）
+      p.application_text ●応募方法
+        <br/>応募方法の詳細は、後日お知らせいたします
 </template>
 
 <script>
@@ -16,7 +33,7 @@ export default {}
 
 .application_wrapper
   width 80%
-  max-width 740px
+  max-width 700px
   display flex
   flex-direction column
   justify-content center
@@ -31,6 +48,8 @@ export default {}
   background: linear-gradient(transparent 70%, THEME_BLUE 30%);
 
 .application_text
-  font-size 1.3rem
+  width 100%
+  font-size 1.2rem
   line-height 2.5rem
+  margin-bottom 10vmin
 </style>
