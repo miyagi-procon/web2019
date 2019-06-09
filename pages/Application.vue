@@ -1,6 +1,6 @@
 <template lang="pug">
   section#application
-    .wrapper
+    .wrapper(class="unvisible" v-bind:class="{ show: showSection }")
       h1.heading 応募概要
       .application_description
         p.text 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
@@ -28,13 +28,45 @@
 </template>
 
 <script>
-export default {}
+export default {
+  methods: {
+    isShown: function(togglePos) {
+      if (process.browser) {
+        const [topPos] = this.$window.getElementPos(
+          'application',
+          this.centerOfWindow()
+        )
+        return topPos + togglePos <= this.$window.scrollY
+      } else {
+        return false
+      }
+    },
+    centerOfWindow: function() {
+      return process.browser ? this.$window.height / 2 : 0
+    }
+  },
+  computed: {
+    showSection() {
+      return this.isShown(0)
+    }
+  }
+}
 </script>
 
 <style lang="stylus" scoped>
 #application
   width 100%
   margin-bottom 40vmin
+  overflow hidden
+
+.unvisible
+  opacity 0
+  -webkit-transition all 1s
+  -webkit-transform translate(100px, 0)
+
+.show
+  opacity 1
+  -webkit-transform translate(0px, 0)
 
 .application_description
   background-color THEME_GRAY_T
