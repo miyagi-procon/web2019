@@ -2,11 +2,13 @@
   section#application
     .application_wrapper
       h1.application_title 応募概要
-      p.application_text 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
-        <br/>プログラミングに触れたことがない初心者も大歓迎です。
-        <br/>各地で実施する関連ワークショップに参加して、挑戦してみよう。
-      p.application_text 最終審査会＆表彰式は、10月27日(日)仙台高等専門学校広瀬キャンパスで開催！
-        <br/>賞品には、ノートパソコンやタブレットなど豪華な副賞も多数！
+      .application_description
+        p.application_text 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
+          <br/>プログラミングに触れたことがない初心者も大歓迎です。
+          <br/>各地で実施する関連ワークショップに参加して、挑戦してみよう。
+          <br/>
+          <br/>最終審査会＆表彰式は、10月27日(日)仙台高等専門学校広瀬キャンパスで開催！
+          <br/><span class='application_text-emphasis'>賞品には、ノートパソコンやタブレットなど豪華な副賞も多数！</span>
 
       h2.application_subheading 募集内容
       p.application_text テーマ：自由
@@ -51,6 +53,11 @@ export default {}
   margin-bottom 2rem
   background: linear-gradient(transparent 70%, THEME_ORANGE 30%);
 
+.application_description
+  background-color THEME_GRAY_T
+  padding 3rem 3rem
+  border-radius 3rem
+
 .application_subheading
   width 100%
   font-size 1.6rem
@@ -58,10 +65,13 @@ export default {}
   font-weight 400
   margin-bottom 3vmin
   background: linear-gradient(transparent 80%, THEME_BLUE 20%);
+  margin-top 10vmin
 
 .application_text
   width 100%
   font-size 1.2rem
   line-height 2.5rem
-  margin-bottom 10vmin
+  &-emphasis
+    font-weight 600
+    background: linear-gradient(transparent 80%, THEME_ORANGE 20%);
 </style>
