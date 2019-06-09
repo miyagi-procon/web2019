@@ -6,6 +6,7 @@
     schedule
     workshop
     stories
+    sponsors
 </template>
 
 <script>
@@ -15,6 +16,7 @@ import Application from '~/pages/Application.vue'
 import Schedule from '~/pages/Schedule.vue'
 import Stories from '~/pages/Stories.vue'
 import Workshop from '~/pages/Workshop.vue'
+import Sponsors from '~/pages/Sponsors.vue'
 
 export default {
   components: {
@@ -23,7 +25,8 @@ export default {
     Stories,
     Application,
     Schedule,
-    Workshop
+    Workshop,
+    Sponsors
   }
 }
 </script>
