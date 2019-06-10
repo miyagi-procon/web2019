@@ -29,8 +29,8 @@ export default {}
 #logo
   width 40vw
   height 40vw
-  max-width calc(WIDTH_MAX * 0.4)
-  max-height calc(WIDTH_MAX * 0.4)
+  max-width calc(1080px * 0.4)
+  max-height calc(1080px * 0.4)
   margin-top 0
 
 .top_right
@@ -38,8 +38,8 @@ export default {}
   background-color THEME_ORANGE
   width 20vw
   height 20vw
-  max-width calc(WIDTH_MAX * 0.2)
-  max-height calc(WIDTH_MAX * 0.2)
+  max-width calc(1080px * 0.2)
+  max-height calc(1080px * 0.2)
   bottom 0
   right 0
 
@@ -48,8 +48,8 @@ export default {}
   background-color THEME_BLUE
   width 20vw
   height 20vw
-  max-width calc(WIDTH_MAX * 0.2)
-  max-height calc(WIDTH_MAX * 0.2)
+  max-width calc(1080px * 0.2)
+  max-height calc(1080px * 0.2)
   top 0
   left 0
 </style>

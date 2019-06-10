@@ -42,9 +42,9 @@ export default {
 
 <style lang="stylus" scoped>
 #about
-  @media screen and (max-width: WIDTH_MAX)
+  @media screen and (max-width: 1080px)
     margin-bottom calc(100vw)
-  @media screen and (min-width: WIDTH_MAX)
+  @media screen and (min-width: 1080px)
     margin-bottom calc(70vw)
 
 .about_wrapper
@@ -75,9 +75,9 @@ export default {
   -webkit-transition all .5s
   &>img
     display inline-block
-    @media screen and (max-width: WIDTH_MAX)
+    @media screen and (max-width: 1080px)
       width 70%
-    @media screen and (min-width: WIDTH_MAX)
+    @media screen and (min-width: 1080px)
       width 50%
   &>p
     position absolute
@@ -87,9 +87,9 @@ export default {
     padding 1rem
     text-align center
     letter-spacing 0.1rem
-    @media screen and (max-width: WIDTH_MAX)
+    @media screen and (max-width: 1080px)
       bottom 20%
-    @media screen and (min-width: WIDTH_MAX)
+    @media screen and (min-width: 1080px)
       top 0
       width 50%
       height calc(100% - 4px)
@@ -99,17 +99,17 @@ export default {
   &-one
     &>p
       background-color THEME_BLUE
-      @media screen and (max-width: WIDTH_MAX)
+      @media screen and (max-width: 1080px)
         left 0
-      @media screen and (min-width: WIDTH_MAX)
+      @media screen and (min-width: 1080px)
         right 0
   &-two
     text-align right
     &>p
       background-color THEME_ORANGE
-      @media screen and (max-width: WIDTH_MAX)
+      @media screen and (max-width: 1080px)
         right 0
-      @media screen and (min-width: WIDTH_MAX)
+      @media screen and (min-width: 1080px)
         left 0
 
 .show

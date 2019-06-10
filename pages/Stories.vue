@@ -62,6 +62,7 @@ export default {
 .stories_image
   width 100%
   margin 2rem 0
+  filter drop-shadow(10px 10px 10px rgba(0,0,0,0.3))
 
 .unvisible
   opacity 0
