@@ -37,7 +37,8 @@ export default {
       this.topClick('about')
     },
     applicationClick: function() {
-      this.topClick('application')
+      this.closeMenu()
+      this.$router.push('/application')
     },
     storiesClick: function() {
       this.topClick('stories')

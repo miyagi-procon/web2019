@@ -2,7 +2,7 @@
   div
     top
     about
-    application
+    //- application
     schedule
     workshop
     stories
@@ -10,20 +10,20 @@
 </template>
 
 <script>
-import Top from '~/pages/Top.vue'
-import About from '~/pages/About.vue'
-import Application from '~/pages/Application.vue'
-import Schedule from '~/pages/Schedule.vue'
-import Stories from '~/pages/Stories.vue'
-import Workshop from '~/pages/Workshop.vue'
-import Sponsors from '~/pages/Sponsors.vue'
+import Top from '~/pages/top/Top.vue'
+import About from '~/pages/top/About.vue'
+// import Application from '~/pages/top/Application.vue'
+import Schedule from '~/pages/top/Schedule.vue'
+import Stories from '~/pages/top/Stories.vue'
+import Workshop from '~/pages/top/Workshop.vue'
+import Sponsors from '~/pages/top/Sponsors.vue'
 
 export default {
   components: {
     Top,
     About,
     Stories,
-    Application,
+    // Application,
     Schedule,
     Workshop,
     Sponsors
