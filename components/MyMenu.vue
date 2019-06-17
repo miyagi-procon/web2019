@@ -34,7 +34,12 @@ export default {
       }
     },
     aboutClick: function() {
-      this.topClick('about')
+      if (this.$route.path === '/') {
+        this.topClick('about')
+      } else {
+        this.$router.push('/')
+        setTimeout(() => this.topClick('about'), 500)
+      }
     },
     applicationClick: function() {
       this.closeMenu()
@@ -47,7 +52,8 @@ export default {
       this.topClick('schedule')
     },
     workshopClick: function() {
-      this.topClick('workshop')
+      this.closeMenu()
+      this.$router.push('/workshop')
     },
     topClick: function(buttonName) {
       this.closeMenu()
