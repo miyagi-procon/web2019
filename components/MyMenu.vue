@@ -46,7 +46,8 @@ export default {
       this.$router.push('/application')
     },
     storiesClick: function() {
-      this.topClick('stories')
+      this.closeMenu()
+      this.$router.push('/stories')
     },
     scheduleClick: function() {
       this.topClick('schedule')
