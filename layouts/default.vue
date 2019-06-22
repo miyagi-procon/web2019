@@ -2,7 +2,7 @@
   .container
     modal(v-if="showModal || opening" @close="showModal = false")
     div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
-      my-menu
+      hamburger
     .main
       .main-content
         nuxt
@@ -10,13 +10,13 @@
 </template>
 
 <script>
-import MyMenu from '~/components/MyMenu.vue'
+import Hamburger from '~/components/Hamburger.vue'
 import MyFooter from '~/components/MyFooter.vue'
 import Modal from '~/components/Modal.vue'
 
 export default {
   components: {
-    MyMenu,
+    Hamburger,
     Modal,
     MyFooter
   },

@@ -1,22 +1,22 @@
 <template lang="pug">
   menu(class="header_wrapper")
-    button(type="button" class="menu_button" @click="toggleOpen($store.state.toggleMenu)")
-      span(class="menu_line-top" v-bind:class="{ 'menu_button-open': $store.state.toggleMenu }")
-      span(class="menu_line-middle" v-bind:class="{ 'menu_button-open': $store.state.toggleMenu }")
-      span(class="menu_line-bottom" v-bind:class="{ 'menu_button-open': $store.state.toggleMenu }")
+    button(type="button" class="hamburger_button" @click="toggleOpen($store.state.toggleMenu)")
+      span(class="hamburger_line-top" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
+      span(class="hamburger_line-middle" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
+      span(class="hamburger_line-bottom" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
 
-    nav(class="menu_wrapper" v-bind:class="{ 'menu_wrapper-open': $store.state.toggleMenu }")
-      ul(class='menu_items')
+    nav(class="hamburger_wrapper" v-bind:class="{ 'hamburger_wrapper-open': $store.state.toggleMenu }")
+      ul(class='hamburger_items')
         li
-          a(href="#" class="menu_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
+          a(href="#" class="hamburger_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
         li
-          a(href="#" class="menu_item" @click.stop.prevent="applicationClick") 応募について
+          a(href="#" class="hamburger_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="#" class="menu_item" @click.stop.prevent="scheduleClick") スケジュール
+          a(href="#" class="hamburger_item" @click.stop.prevent="scheduleClick") スケジュール
         li
-          a(href="#" class="menu_item" @click.stop.prevent="workshopClick") ワークショップ
+          a(href="#" class="hamburger_item" @click.stop.prevent="workshopClick") ワークショップ
         li
-          a(href="#" class="menu_item" @click.stop.prevent="storiesClick") コンセプトストーリー
+          a(href="#" class="hamburger_item" @click.stop.prevent="storiesClick") コンセプトストーリー
 </template>
 
 <script>
@@ -75,12 +75,12 @@ export default {
 .header_wrapper
   padding 0
 
-.menu_wrapper
+.hamburger_wrapper
   display none
   &-open
     display block
 
-.menu_items
+.hamburger_items
   display flex
   position fixed
   top 10%
@@ -90,7 +90,7 @@ export default {
   align-items flex-start
   justify-content space-around
 
-.menu_button
+.hamburger_button
   position relative
   display inline-block
   width 30px
@@ -102,7 +102,7 @@ export default {
   border none
   padding 0
 
-.menu_item
+.hamburger_item
   font-size 2rem
   color BG_COLOR
   text-decoration none
@@ -110,16 +110,16 @@ export default {
   &:active
     color BG_COLOR
 
-.menu_line-top
+.hamburger_line-top
   top 0px
-.menu_line-middle
+.hamburger_line-middle
   top 10px
-.menu_line-bottom
+.hamburger_line-bottom
   top 20px
 
-.menu_line-top,
-.menu_line-middle,
-.menu_line-bottom
+.hamburger_line-top,
+.hamburger_line-middle,
+.hamburger_line-bottom
   position absolute
   display block
   width 100%
@@ -128,20 +128,20 @@ export default {
   transition 0.15s ease-out
   background-color BASE_COLOR
 
-.menu_button-open
+.hamburger_button-open
   // 真ん中の線
-  &.menu_line-top
+  &.hamburger_line-top
     width 0
     opacity 0
     transform translateX(20px) rotate(90deg)
     background-color BG_COLOR
   // 上の線
-  &.menu_line-middle
+  &.hamburger_line-middle
     width 30px
     transform translateY(5px) rotate(-135deg)
     background-color BG_COLOR
   // 下の線
-  &.menu_line-bottom
+  &.hamburger_line-bottom
     width 30px
     transform translateY(-5px) rotate(135deg)
     background-color BG_COLOR
