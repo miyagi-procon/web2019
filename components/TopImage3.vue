@@ -1,7 +1,7 @@
 <template lang="pug">
   .top_wrapper.top_wrapper1
-    p.top_text かけるだけで<br/>街で冒険ゲームができる<br/>めがね。
-    img.top_image(src="~assets/images/slideillust3.png")
+    p.top_text3 かけるだけで<br/>街で冒険ゲームができる<br/>めがね。
+    img.top_image3(src="~assets/images/slideillust3.png")
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {}
 .top_wrapper1
   background-color THEME_BLUE
 
-.top_text
+.top_text3
   font-weight 700
   color BG_COLOR
   position absolute
@@ -30,7 +30,7 @@ export default {}
     right 5%
     top 35%
 
-.top_image
+.top_image3
   position absolute
   @media screen and (max-width: 740px)
     max-height 60vw

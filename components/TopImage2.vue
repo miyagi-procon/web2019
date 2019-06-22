@@ -1,7 +1,7 @@
 <template lang="pug">
   .top_wrapper.top_wrapper1
-    p.top_text ともだちの気持ちを<br/>計れる<br/>センサー。
-    img.top_image(src="~assets/images/slideillust2.png")
+    p.top_text2 ともだちの気持ちを<br/>計れる<br/>センサー。
+    img.top_image2(src="~assets/images/slideillust2.png")
 </template>
 
 <script>
@@ -12,7 +12,7 @@ export default {}
 .top_wrapper1
   background-color THEME_GRAY
 
-.top_text
+.top_text2
   font-weight 700
   color BG_COLOR
   position absolute
@@ -32,7 +32,7 @@ export default {}
     right 10vw
     top 30%
 
-.top_image
+.top_image2
   position absolute
   @media screen and (max-width: 740px)
     max-height 70vw
