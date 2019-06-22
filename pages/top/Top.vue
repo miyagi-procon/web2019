@@ -1,6 +1,6 @@
 <template lang="pug">
   section#top
-    top-image1
+    top-image3
     //- .title
     //-   .top_right
     //-   .top_left
@@ -10,11 +10,13 @@
 <script>
 import TopImage1 from '~/components/TopImage1.vue'
 import TopImage2 from '~/components/TopImage2.vue'
+import TopImage3 from '~/components/TopImage3.vue'
 
 export default {
   components: {
     TopImage1,
-    TopImage2
+    TopImage2,
+    TopImage3
   }
 }
 </script>
