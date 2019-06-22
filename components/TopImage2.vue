@@ -1,5 +1,5 @@
 <template lang="pug">
-  .top_wrapper.top_wrapper1
+  .top_wrapper.top_wrapper2
     p.top_text2 ともだちの気持ちを<br/>計れる<br/>センサー。
     img.top_image2(src="~assets/images/slideillust2.png")
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.top_wrapper1
+.top_wrapper2
   background-color THEME_GRAY
   animation-delay 4s
 

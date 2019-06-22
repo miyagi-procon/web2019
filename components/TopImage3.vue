@@ -1,5 +1,5 @@
 <template lang="pug">
-  .top_wrapper.top_wrapper1
+  .top_wrapper.top_wrapper3
     p.top_text3 かけるだけで<br/>街で冒険ゲームができる<br/>めがね。
     img.top_image3(src="~assets/images/slideillust3.png")
 </template>
@@ -9,7 +9,7 @@ export default {}
 </script>
 
 <style lang="stylus" scoped>
-.top_wrapper1
+.top_wrapper3
   background-color THEME_BLUE
   animation-delay 8s
 
