@@ -1,7 +1,7 @@
 <template lang="pug">
   .container
     modal(v-if="showModal || opening" @close="showModal = false")
-    div(class="navi navi-head" v-bind:class="{ 'navi_menu-open': $store.state.toggleMenu }")
+    div(class="hamburger hamburger-head" v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu }")
       hamburger
     .main
       .main-content
@@ -52,12 +52,14 @@ export default {
     position absolute
     width 100%
 
-.navi
+.hamburger
   z-index 1
-.navi-head
+  @media screen and (min-width: 740px)
+    display none
+.hamburger-head
   position fixed
   top 5%
   left 5%
-.navi_menu-open
+.hamburger_menu-open
   z-index 100
 </style>

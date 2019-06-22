@@ -1,10 +1,13 @@
 <template lang="pug">
   section#top
-    top-image1
-    top-image2
-    top-image3
-    top-image4
-    router-link.top_stories(to="/stories") コンセプトストーリーへ
+    .top_container
+      top-image1
+      top-image2
+      top-image3
+      top-image4
+      router-link.top_stories(to="/stories") コンセプトストーリーへ
+    .menubar_wrapper
+      menu-bar
 </template>
 
 <script>
@@ -12,13 +15,15 @@ import TopImage1 from '~/components/TopImage1.vue'
 import TopImage2 from '~/components/TopImage2.vue'
 import TopImage3 from '~/components/TopImage3.vue'
 import TopImage4 from '~/components/TopImage4.vue'
+import MenuBar from '~/components/MenuBar'
 
 export default {
   components: {
     TopImage1,
     TopImage2,
     TopImage3,
-    TopImage4
+    TopImage4,
+    MenuBar
   }
 }
 </script>
@@ -27,6 +32,8 @@ export default {
 #top
   width 100%
   margin-bottom 40vmin
+
+.top_container
   position relative
   @media screen and (max-width: 740px)
     height 100vw
@@ -58,4 +65,8 @@ export default {
   border-radius 1rem 0 0 1rem
   &:visited
     color BASE_COLOR
+
+.menubar_wrapper
+  @media screen and (max-width: 740px)
+    display none
 </style>
