@@ -11,6 +11,7 @@ export default {}
 <style lang="stylus" scoped>
 .top_wrapper1
   background-color THEME_BLUE
+  animation-delay 8s
 
 .top_text3
   font-weight 700

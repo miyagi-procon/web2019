@@ -1,10 +1,9 @@
 <template lang="pug">
   section#top
+    top-image1
+    top-image2
+    top-image3
     top-image4
-    //- .title
-    //-   .top_right
-    //-   .top_left
-    //-   img#logo(src="~assets/images/logo.png")
 </template>
 
 <script>
@@ -27,10 +26,20 @@ export default {
 #top
   width 100%
   margin-bottom 40vmin
+  position relative
+  @media screen and (max-width: 740px)
+    height 100vw
+  @media screen and (min-width: 740px)
+    max-height 100vh
+    height calc(100vw * 2 / 3)
 
 .top_wrapper
   width 100%
-  position relative
+  position absolute
+  animation-name slide
+  animation-duration 16s
+  animation-iteration-count infinite
+  opacity 0
   @media screen and (max-width: 740px)
     height 100vw
   @media screen and (min-width: 740px)

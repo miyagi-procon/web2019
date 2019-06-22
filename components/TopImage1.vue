@@ -11,6 +11,7 @@ export default {}
 <style lang="stylus" scoped>
 .top_wrapper1
   background-color THEME_ORANGE
+  animation-delay 0s
 
 .top_text1
   text-align center
