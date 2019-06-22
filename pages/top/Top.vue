@@ -1,6 +1,6 @@
 <template lang="pug">
   section#top
-    top-image2
+    top-image1
     //- .title
     //-   .top_right
     //-   .top_left

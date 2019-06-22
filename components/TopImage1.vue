@@ -13,18 +13,22 @@ export default {}
   background-color THEME_ORANGE
 
 .top_text
+  text-align center
   font-weight 700
   color BG_COLOR
-  text-align center
   position absolute
   @media screen and (max-width: 740px)
     font-size 2rem
     left 10vw
-    top 20%
-  @media screen and (min-width: 740px)
+    top 25%
+  @media screen and (min-width: 740px) and (max-width: 1080px)
+    font-size 3rem
+    left 10vw
+    top 40%
+  @media screen and (min-width: 1080px)
     font-size 4rem
     left 10vw
-    top 50%
+    top 40%
 
 .top_image
   position absolute
@@ -32,8 +36,12 @@ export default {}
     max-height 70vw
     right 10%
     bottom 10%
-  @media screen and (min-width: 740px)
+  @media screen and (min-width: 740px) and (max-width: 1080px)
     max-height 60vmin
     right 10%
-    bottom 10%
+    top calc(100vw * 2 / 3 - 60vmin)
+  @media screen and (min-width: 1080px)
+    max-height 70vmin
+    right 10%
+    top 20%
 </style>
