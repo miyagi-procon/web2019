@@ -36,7 +36,6 @@ export default {
 <style lang="stylus" scoped>
 #news
   width 100%
-  margin-bottom 40vmin
   overflow hidden
   background-color THEME_BLUE
 
@@ -52,6 +51,7 @@ export default {
 .news_title
   color BASE_COLOR
   margin 3rem
+  font-weight 400
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px)
