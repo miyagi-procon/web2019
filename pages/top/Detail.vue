@@ -99,6 +99,7 @@ export default {
   border-radius 1rem
   text-align center
   margin 2rem 0 4rem
+  color BASE_COLOR
   &:visited
     color BASE_COLOR
 </style>

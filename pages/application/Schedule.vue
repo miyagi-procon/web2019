@@ -57,6 +57,7 @@ export default {
   padding 1rem
   text-decoration none
   border-radius 1rem
+  color BASE_COLOR
   &:visited
     color BASE_COLOR
 </style>

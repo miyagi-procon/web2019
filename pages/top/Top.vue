@@ -59,6 +59,7 @@ export default {
   right 0
   bottom 2%
   background-color BG_COLOR_T
+  color BASE_COLOR
   font-size 1rem
   padding 1rem
   text-decoration none
