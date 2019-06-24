@@ -10,10 +10,10 @@
       a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
     .workshopCard_content
       p.workshopCard_heading {{ title }}
-      p.workshopCard_subtext1 ~<span v-html="subtitle"></span>
+      p.workshopCard_subtext1 <span v-html="subtitle"></span>
       .workshopCard_subtext2
-        p {{ place }}
-        p {{ organizer }}
+        p <font-awesome-icon icon="map-marker-alt" style="font-size: 1rem"/> {{ place }}
+        p <font-awesome-icon icon="building" style="font-size: 1rem"/> {{ organizer }}
 </template>
 
 <script>

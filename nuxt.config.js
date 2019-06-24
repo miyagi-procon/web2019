@@ -45,8 +45,16 @@ export default {
    */
   modules: [
     ['nuxt-stylus-resources-loader', resolve(__dirname, 'assets/stylus/**/*.styl')],
+    'nuxt-fontawesome',
   ],
-
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
+    ]
+  },
   /*
    ** Build configuration
    */
