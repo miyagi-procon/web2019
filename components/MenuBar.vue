@@ -3,7 +3,8 @@
     nav(v-bind:class="{ isFix: toggleFix }")
       ul(class='menubar_items')
         li
-          img.menu_logo(src="~assets/images/logo2.png")
+          router-link(to="/")
+            img.menu_logo(src="~assets/images/logo2.png")
         li
           a(href="#" class="menubar_item" @click.stop.prevent="aboutClick") みやぎプロコンって？
         li

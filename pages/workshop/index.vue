@@ -84,7 +84,6 @@ export default {
 <style lang="stylus" scoped>
 #workshop
   width 100%
-  // height 100vh
   background-color THEME_ORANGE
 
 .workshop_container
