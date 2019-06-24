@@ -3,7 +3,7 @@
     .wrapper(class="unvisible" v-bind:class="{ show: showSection }")
       h1.heading 詳細
       h2.subheading 募集内容
-      p.text テーマ：自由
+      p.text <span class='text-emphasis'>テーマ：自由</span>
         <br/>オリジナルのブログラム作品であれば、ジャンルや言語、作成ツールは問いません。
         <br/>・ゲームやアプリなどのソフトウェア
         <br/>・ロボットや電子工作などのハードウェア

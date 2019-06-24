@@ -5,7 +5,8 @@
 
       h2.subheading 2019年7月～
       p.text 関連ワークショップを県内各地で実施
-        <br/>※実施スケジュール等は、随時発表いたします
+      .text.text-right
+        router-link.schedule_toWorkshop(to="/workshop") ワークショップ一覧
 
       h2.subheading 2019年8月1日(木)～9月30日(月)
       p.text 作品応募期間
@@ -62,4 +63,13 @@ export default {
 .show
   opacity 1
   -webkit-transform translate(0px, 0)
+
+.schedule_toWorkshop
+  background-color THEME_GRAY
+  font-size 1rem
+  padding 1rem
+  text-decoration none
+  border-radius 1rem
+  &:visited
+    color BASE_COLOR
 </style>
