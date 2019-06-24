@@ -31,7 +31,7 @@ export default {
   },
   computed: {
     showSection() {
-      return this.isShown(0)
+      return this.isShown(-100)
     }
   }
 }

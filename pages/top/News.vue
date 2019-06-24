@@ -4,11 +4,23 @@
       h1.news_title News
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
-          p test
+          news-item(
+            heading='ワークショップの情報を追加しました'
+            subtext='関連ワークショップの情報を追加しました。<br/><a href="/workshop">こちら</a>からチェックしてみてください！'
+            date='2019/6/25')
+          news-item(
+            heading='ホームページ公開しました！'
+            subtext='「みやぎプロコン」の公式ホームページを公開しました。<br/>これからどんどん情報が追加されていきますので、お楽しみに！'
+            date='2019/6/24')
 </template>
 
 <script>
+import NewsItem from '~/components/NewsItem.vue'
+
 export default {
+  components: {
+    NewsItem
+  },
   methods: {
     isShown: function(togglePos) {
       if (process.browser) {
@@ -27,7 +39,7 @@ export default {
   },
   computed: {
     showSection() {
-      return this.isShown(0)
+      return this.isShown(-100)
     }
   }
 }
@@ -60,10 +72,12 @@ export default {
 .news_content
   background-color BG_COLOR
   margin 5vmin
+  overflow-y scroll
+  height 50vmin
   @media screen and (max-width: 740px)
-    height 70vh
-    width 70vw
+    width 80vw
+    padding 2rem
   @media screen and (min-width: 740px)
-    height 50vh
-    width 40vw
+    width 50vw
+    padding 2rem 5rem
 </style>

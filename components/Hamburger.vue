@@ -12,8 +12,6 @@
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="#" class="hamburger_item" @click.stop.prevent="scheduleClick") スケジュール
-        li
           a(href="#" class="hamburger_item" @click.stop.prevent="workshopClick") ワークショップ
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="storiesClick") コンセプトストーリー
@@ -48,9 +46,6 @@ export default {
     storiesClick: function() {
       this.closeMenu()
       this.$router.push('/stories')
-    },
-    scheduleClick: function() {
-      this.topClick('schedule')
     },
     workshopClick: function() {
       this.closeMenu()

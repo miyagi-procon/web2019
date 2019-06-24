@@ -64,5 +64,8 @@ export default {
 .application_description
   font-size 1.3rem
   line-height 2.5rem
-  margin 2rem 0 20vmin
+  margin 10vmin 0 20vmin
+  padding 5vmin 0
+  border-top 5px dotted THEME_BLUE
+  border-bottom 5px dotted THEME_BLUE
 </style>
