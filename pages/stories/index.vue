@@ -4,7 +4,7 @@
       menu-bar
     .stories_container
       h1.stories_title <font-awesome-icon icon="check" class="stories_icon"/> コンセプトストーリー
-      .stories_card.stories_card-blue.unvisible#story1(v-bind:class="{ show: showStory1 }")
+      .stories_card.stories_card-blue#story1
         p.stories_card_main ぼくは算数がにがてです。
           <br/>なぜなら、数字がきらいだからです。
           <br/>たし算やひき算はできます。
@@ -51,9 +51,6 @@ export default {
   },
   mixins: [appearMixin],
   computed: {
-    showStory1() {
-      return this.isShown('story1')
-    },
     showStory2() {
       return this.isShown('story2')
     }
@@ -64,7 +61,7 @@ export default {
 <style lang="stylus" scoped>
 #stories
   width 100%
-  margin-bottom 40vmin
+  margin-bottom 10vmin
   overflow hidden
 
 .unvisible
