@@ -1,7 +1,7 @@
 <template lang="pug">
   section#about
     .wrapper
-      h1.about_title About
+      //- h1.about_title About
       .unvisible(v-bind:class="{ show: showSection }")
         .about_content
           .white_area
@@ -48,7 +48,7 @@ export default {
     font-size 4rem
 
 .about_content
-  margin 5vmin
+  margin 10vmin 0 5vmin
   position relative
   padding-bottom 3vmin
   @media screen and (max-width: 740px)

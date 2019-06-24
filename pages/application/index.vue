@@ -3,7 +3,7 @@
     .menubar_wrapper
       menu-bar
     .application_container
-      h1.application_title 応募について
+      h1.application_title <font-awesome-icon icon="check" class="application_icon"/> 応募について
       .application_wrapper
         .wrapper
           p.application_description 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
@@ -42,7 +42,17 @@ export default {
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px)
-    font-size 4rem
+    font-size 3rem
+
+.application_icon
+  color THEME_BLUE
+  background-color BG_COLOR_T
+  padding .5rem
+  border-radius 1rem
+  @media screen and (max-width: 740px)
+    font-size 2rem
+  @media screen and (min-width: 740px)
+    font-size 3rem
 
 .application_container
   display flex
@@ -58,7 +68,7 @@ export default {
   flex-direction column
   justify-content center
   align-items center
-  margin 10vmin 10vmin
+  margin-bottom 10vmin
 
 
 .application_description

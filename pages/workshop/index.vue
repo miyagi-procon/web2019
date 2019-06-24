@@ -3,7 +3,7 @@
     .menubar_wrapper
       menu-bar
     .workshop_container
-      h1.workshop_title Workshop
+      h1.workshop_title <font-awesome-icon icon="check" class="workshop_icon"/> ワークショップ
       .workshop_wrapper
         p.workshop_text 夏休み期間中はプログラミング体験イベントが盛りだくさん！
           <br/>ワークショップに参加して、みやぎプロコンに応募しよう！
@@ -106,11 +106,21 @@ export default {
 
 .workshop_title
   margin 3rem
-  font-weight 400
+  font-weight 500
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px)
-    font-size 4rem
+    font-size 3rem
+
+.workshop_icon
+  color THEME_ORANGE
+  background-color BG_COLOR_T
+  padding .5rem
+  border-radius 1rem
+  @media screen and (max-width: 740px)
+    font-size 2rem
+  @media screen and (min-width: 740px)
+    font-size 3rem
 
 .workshop_text
   font-size 1.3rem

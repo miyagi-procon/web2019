@@ -3,7 +3,7 @@
     .menubar_wrapper
       menu-bar
     .stories_container
-      h1.stories_title コンセプトストーリー
+      h1.stories_title <font-awesome-icon icon="check" class="stories_icon"/> コンセプトストーリー
       .stories_card.stories_card-blue.unvisible#story1(v-bind:class="{ show: showStory1 }")
         p.stories_card_main ぼくは算数がにがてです。
           <br/>なぜなら、数字がきらいだからです。
@@ -88,6 +88,16 @@ export default {
 .stories_title
   margin 3rem 0 1rem
   font-weight 400
+  @media screen and (max-width: 740px)
+    font-size 2rem
+  @media screen and (min-width: 740px)
+    font-size 3rem
+
+.stories_icon
+  color BG_COLOR
+  background-color THEME_GRAY
+  padding .5rem
+  border-radius 1rem
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px)

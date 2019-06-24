@@ -79,7 +79,7 @@ export default {
   display flex
   position fixed
   top 10%
-  left 10%
+  right 10%
   height 70%
   flex-direction column
   align-items flex-end

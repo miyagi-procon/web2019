@@ -1,7 +1,7 @@
 <template lang="pug">
   section#news
     .wrapper
-      h1.news_title News
+      h1.news_title <font-awesome-icon icon="check" class="news_icon"/> 新着情報
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
@@ -48,16 +48,26 @@ export default {
 
 .news_title
   color BASE_COLOR
-  margin 3rem
+  margin 3rem 0 2rem
   font-weight 400
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px)
-    font-size 4rem
+    font-size 3rem
+
+.news_icon
+  color THEME_BLUE
+  background-color BG_COLOR_T
+  padding .5rem
+  border-radius 1rem
+  @media screen and (max-width: 740px)
+    font-size 2rem
+  @media screen and (min-width: 740px)
+    font-size 3rem
 
 .news_content
   background-color BG_COLOR
-  margin 5vmin
+  margin 0 5vmin 5vmin
   overflow-y scroll
   height 50vmin
   @media screen and (max-width: 740px)
