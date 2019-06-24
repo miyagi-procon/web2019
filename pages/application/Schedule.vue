@@ -24,26 +24,13 @@
 </template>
 
 <script>
+import appearMixin from '~/mixins/appearMixin'
+
 export default {
-  methods: {
-    isShown: function(togglePos) {
-      if (process.browser) {
-        const [topPos] = this.$window.getElementPos(
-          'schedule',
-          this.centerOfWindow()
-        )
-        return topPos + togglePos <= this.$window.scrollY
-      } else {
-        return false
-      }
-    },
-    centerOfWindow: function() {
-      return process.browser ? this.$window.height / 2 : 0
-    }
-  },
+  mixins: [appearMixin],
   computed: {
     showSection() {
-      return this.isShown(-100)
+      return this.isShown('schedule')
     }
   }
 }

@@ -4,7 +4,7 @@
       menu-bar
     .stories_container
       h1.stories_title コンセプトストーリー
-      .stories_card.stories_card-blue
+      .stories_card.stories_card-blue.unvisible#story1(v-bind:class="{ show: showStory1 }")
         p.stories_card_main ぼくは算数がにがてです。
           <br/>なぜなら、数字がきらいだからです。
           <br/>たし算やひき算はできます。
@@ -25,7 +25,7 @@
           <br/>可能性を広げる小さな１歩を、応援してあげませんか。
         p.stories_card_keyword まっさらな0, 可能性の1歩。
 
-      .stories_card.stories_card-orange
+      .stories_card.stories_card-orange.unvisible#story2(v-bind:class="{ show: showStory2 }")
         p.stories_card_main 図工の時間に、あったらいいなと思うどうぐをつくりました。
           <br/>わたしは、将来びようしになりたいので、好きなかみがたとかみの色に変えられるマシーンをダンボールで作りました。
           <br/>クラスの男の子は、むりって言ってきたけど、わたしはそうは思いません。
@@ -43,10 +43,20 @@
 
 <script>
 import MenuBar from '~/components/MenuBar'
+import appearMixin from '~/mixins/appearMixin'
 
 export default {
   components: {
     MenuBar
+  },
+  mixins: [appearMixin],
+  computed: {
+    showStory1() {
+      return this.isShown('story1')
+    },
+    showStory2() {
+      return this.isShown('story2')
+    }
   }
 }
 </script>
@@ -56,6 +66,15 @@ export default {
   width 100%
   margin-bottom 40vmin
   overflow hidden
+
+.unvisible
+  opacity 0
+  -webkit-transition all 1s
+  -webkit-transform translate(-100px, 0)
+
+.show
+  opacity 1
+  -webkit-transform translate(0px, 0)
 
 .stories_container
   width 90%

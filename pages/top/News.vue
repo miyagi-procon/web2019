@@ -16,30 +16,16 @@
 
 <script>
 import NewsItem from '~/components/NewsItem.vue'
+import appearMixin from '~/mixins/appearMixin'
 
 export default {
   components: {
     NewsItem
   },
-  methods: {
-    isShown: function(togglePos) {
-      if (process.browser) {
-        const [topPos] = this.$window.getElementPos(
-          'news',
-          this.centerOfWindow()
-        )
-        return topPos + togglePos <= this.$window.scrollY
-      } else {
-        return false
-      }
-    },
-    centerOfWindow: function() {
-      return process.browser ? this.$window.height / 2 : 0
-    }
-  },
+  mixins: [appearMixin],
   computed: {
     showSection() {
-      return this.isShown(-100)
+      return this.isShown('news')
     }
   }
 }
