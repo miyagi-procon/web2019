@@ -18,6 +18,7 @@
             detail-item(
               heading='豪華賞品がいっぱい！'
               subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛証がたくさんあります。')
+      a.detail_toApplication(href="/application") 応募について見る
 </template>
 
 <script>
@@ -89,4 +90,15 @@ export default {
 
 .detail_items
   padding 6rem 4rem 2rem 2rem
+
+.detail_toApplication
+  background-color BG_COLOR_T
+  font-size 1.5rem
+  padding 1rem
+  text-decoration none
+  border-radius 1rem
+  text-align center
+  margin 2rem 0 4rem
+  &:visited
+    color BASE_COLOR
 </style>
