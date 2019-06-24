@@ -51,7 +51,7 @@ export default {
 <style lang="stylus" scoped>
 #schedule
   width 100%
-  margin-bottom 40vmin
+  margin-bottom 10vmin
   overflow hidden
 
 .unvisible

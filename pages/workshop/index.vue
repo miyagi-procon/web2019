@@ -66,7 +66,7 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='gray')
+            color='blue')
 </template>
 
 <script>
@@ -102,6 +102,7 @@ export default {
   margin 0 auto
   padding 2rem
   width 80vw
+  margin-bottom 10vmin
   display flex
   flex-direction row
   justify-content center
@@ -118,6 +119,8 @@ export default {
 .workshop_text
   font-size 1.3rem
   line-height 2.5rem
+  font-weight 700
+  text-decoration underline dotted THEME_ORANGE
 
 .workshop_lists
   display flex
