@@ -1,7 +1,7 @@
 <template lang="pug">
   .detail_wrapper
     p.detail_heading {{ headingText }}
-    p.detail_subtext {{ subtextText }}
+    p.detail_subtext <span v-html="subtextText"></span>
 </template>
 
 <script>
