@@ -5,19 +5,26 @@
         li
           img.menu_logo(src="~assets/images/logo2.png")
         li
-          a(href="#" class="menubar_item" @click.stop.prevent="aboutClick") トップ
+          a(href="#" class="menubar_item" @click.stop.prevent="aboutClick") みやぎプロコンって？
         li
           a(href="#" class="menubar_item" @click.stop.prevent="applicationClick") 応募について
         li
           a(href="#" class="menubar_item" @click.stop.prevent="workshopClick") ワークショップ
         li
           a(href="#" class="menubar_item" @click.stop.prevent="storiesClick") コンセプト<br/>ストーリー
+        li
+          .hamburger.hamburger-head(v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu, showHumburger: toggleFix }")
+            hamburger
 </template>
 
 <script>
 import VueScrollTo from 'vue-scrollto'
+import Hamburger from '~/components/Hamburger.vue'
 
 export default {
+  components: {
+    Hamburger
+  },
   methods: {
     isFix: function(togglePos) {
       if (process.browser && this.$route.path === '/') {
@@ -80,7 +87,7 @@ export default {
   background-color BASE_COLOR
   display flex
   width 100%
-  height 10vmin
+  height 12vmin
   flex-direction row
   align-items center
   justify-content space-around
@@ -94,8 +101,19 @@ export default {
     color BG_COLOR
   &:visited
     color BG_COLOR
+  @media screen and (max-width: 740px)
+    display none
 
 .menu_logo
   height 10vmin
   padding 0.3rem
+
+.hamburger
+  z-index 200
+  display none
+.hamburger_menu-open
+  z-index 300
+.showHumburger
+  @media screen and (max-width: 740px)
+    display block
 </style>

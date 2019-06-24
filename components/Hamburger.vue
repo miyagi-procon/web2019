@@ -1,11 +1,11 @@
 <template lang="pug">
-  menu(class="header_wrapper")
+  .header_wrapper
     button(type="button" class="hamburger_button" @click="toggleOpen($store.state.toggleMenu)")
       span(class="hamburger_line-top" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
       span(class="hamburger_line-middle" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
       span(class="hamburger_line-bottom" v-bind:class="{ 'hamburger_button-open': $store.state.toggleMenu }")
 
-    nav(class="hamburger_wrapper" v-bind:class="{ 'hamburger_wrapper-open': $store.state.toggleMenu }")
+    .hamburger_wrapper(v-bind:class="{ 'hamburger_wrapper-open': $store.state.toggleMenu }")
       ul(class='hamburger_items')
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
@@ -87,7 +87,7 @@ export default {
   left 10%
   height 70%
   flex-direction column
-  align-items flex-start
+  align-items flex-end
   justify-content space-around
 
 .hamburger_button
@@ -111,11 +111,11 @@ export default {
     color BG_COLOR
 
 .hamburger_line-top
-  top 0px
-.hamburger_line-middle
   top 10px
-.hamburger_line-bottom
+.hamburger_line-middle
   top 20px
+.hamburger_line-bottom
+  top 30px
 
 .hamburger_line-top,
 .hamburger_line-middle,
@@ -126,7 +126,7 @@ export default {
   height 3px
   border-radius 3px
   transition 0.15s ease-out
-  background-color BASE_COLOR
+  background-color BG_COLOR
 
 .hamburger_button-open
   // 真ん中の線

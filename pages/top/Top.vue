@@ -8,8 +8,6 @@
       router-link.top_stories(to="/stories") コンセプトストーリーへ
     .menubar_wrapper
       menu-bar
-    .top_divider
-      img.divider_logo(src="~assets/images/logo2.png")
 </template>
 
 <script>
@@ -67,19 +65,4 @@ export default {
   border-radius 1rem 0 0 1rem
   &:visited
     color BASE_COLOR
-
-.top_divider
-  background-color BASE_COLOR
-  display flex
-  width 100%
-  height 10vmin
-  flex-direction row
-  align-items center
-  justify-content center
-  @media screen and (min-width: 740px)
-    display none
-
-.divider_logo
-  max-height 10vmin
-  padding 0.3rem
 </style>

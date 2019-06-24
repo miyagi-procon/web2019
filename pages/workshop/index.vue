@@ -92,10 +92,7 @@ export default {
   flex-direction column
   justify-content center
   align-items center
-  @media screen and (max-width: 740px)
-    margin-top 0
-  @media screen and (min-width: 740px)
-    margin-top 10vmin
+  margin-top 12vmin
 
 .workshop_wrapper
   background-color BG_COLOR

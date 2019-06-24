@@ -1,8 +1,8 @@
 <template lang="pug">
   .container
     modal(v-if="showModal || opening" @close="showModal = false")
-    div(class="hamburger hamburger-head" v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu }")
-      hamburger
+    //- div(class="hamburger hamburger-head" v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu }")
+    //-   hamburger
     .main
       .main-content
         nuxt
