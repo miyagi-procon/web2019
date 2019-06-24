@@ -20,11 +20,11 @@ import VueScrollTo from 'vue-scrollto'
 export default {
   methods: {
     isFix: function(togglePos) {
-      if (process.browser) {
+      if (process.browser && this.$route.path === '/') {
         const [topPos] = this.$window.getElementPos('menubar', 0)
         return topPos + togglePos <= this.$window.scrollY
       } else {
-        return false
+        return true
       }
     },
     aboutClick: function() {

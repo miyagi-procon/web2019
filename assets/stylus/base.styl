@@ -19,11 +19,11 @@ html
   box-sizing border-box
   color BASE_COLOR
   background-color BG_COLOR
-  @media screen and (max-width: 400px)
+  @media screen and (max-width: 450px)
     font-size 10px
-  @media screen and (min-width: 400px) and (max-width: 600px)
+  @media screen and (min-width: 450px) and (max-width: 740px)
     font-size 12px
-  @media screen and (min-width: 600px) and (max-width: 900px)
+  @media screen and (min-width: 740px) and (max-width: 900px)
     font-size 15px
   @media screen and (min-width: 900px)
     font-size 16px
@@ -90,6 +90,10 @@ code
   &-emphasis
     font-weight 600
     background: linear-gradient(transparent 80%, THEME_ORANGE 20%);
+
+.menubar_wrapper
+  @media screen and (max-width: 740px)
+    display none
 
 @keyframes slide {
   0% { opacity: 0 }

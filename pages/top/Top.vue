@@ -68,10 +68,6 @@ export default {
   &:visited
     color BASE_COLOR
 
-.menubar_wrapper
-  @media screen and (max-width: 740px)
-    display none
-
 .top_divider
   background-color BASE_COLOR
   display flex

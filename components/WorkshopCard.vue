@@ -1,0 +1,134 @@
+<template lang="pug">
+  .workshopCard_wrapper(v-bind:style="{ backgroundColor: activeColor }")
+    .workshopCard_dateWrapper
+      .workshopCard_date
+        p {{ date }}
+        p [{{ day }}]
+      .workshopCard_date(v-bind:class="{ 'workshopCard-hidden': !date2Exist }")
+        p {{ date2 }}
+        p [{{ day2 }}]
+      a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
+    .workshopCard_content
+      p.workshopCard_heading {{ title }}
+      p.workshopCard_subtext1 ~<span v-html="subtitle"></span>
+      .workshopCard_subtext2
+        p {{ place }}
+        p {{ organizer }}
+</template>
+
+<script>
+export default {
+  props: [
+    'date',
+    'day',
+    'date2',
+    'day2',
+    'title',
+    'subtitle',
+    'place',
+    'organizer',
+    'color',
+    'link'
+  ],
+  data() {
+    let activeColor
+    switch (this.color) {
+      case 'gray':
+        activeColor = 'rgb(181, 181, 182)'
+        break
+      case 'orange':
+        activeColor = 'rgb(231, 119, 34)'
+        break
+      case 'blue':
+      default:
+        activeColor = 'rgb(116, 181, 228)'
+        break
+    }
+    return {
+      activeColor,
+      date2Exist: this.date2 && this.day2,
+      linkExist: this.link
+    }
+  }
+}
+</script>
+
+<style lang="stylus" scoped>
+.workshopCard_wrapper
+  background-color THEME_BLUE
+  display flex
+  margin 1rem
+  @media screen and (max-width: 740px)
+    width 250px
+    height 150px
+  @media screen and (min-width: 740px)
+    width 450px
+    height 250px
+
+.workshopCard_dateWrapper
+  display flex
+  flex-direction column
+
+.workshopCard_date
+  background-color BASE_COLOR
+  color BG_COLOR
+  display flex
+  align-items center
+  justify-content center
+  flex-direction column
+  @media screen and (max-width: 740px)
+    width 50px
+    height 50px
+  @media screen and (min-width: 740px)
+    font-size 1.3rem
+    width 100px
+    height 100px
+
+.workshopCard-hidden
+  display none
+
+.workshopCard_content
+  display flex
+  align-items flex-start
+  justify-content center
+  flex-direction column
+  padding 1rem
+
+.workshopCard_heading
+  font-weight 600
+  position relative
+  margin-bottom .5rem
+  @media screen and (max-width: 740px)
+    font-size 1.2rem
+  @media screen and (min-width: 740px)
+    font-size 1.5rem
+
+.workshopCard_subtext1
+  margin-bottom 1rem
+  @media screen and (max-width: 740px)
+    font-size 1rem
+  @media screen and (min-width: 740px)
+    font-size 1.2rem
+
+.workshopCard_subtext2
+  font-weight 700
+  font-size 1rem
+  width 100%
+  display flex
+  flex-direction column
+  justify-content flex-end
+  align-items flex-end
+  text-align right
+  float right
+
+.workshopCard_link
+  background-color BG_COLOR_T
+  font-size 1rem
+  padding 1rem
+  text-decoration none
+  border-radius 1rem
+  text-align center
+  margin 1rem .2rem
+  &:visited
+    color BASE_COLOR
+</style>

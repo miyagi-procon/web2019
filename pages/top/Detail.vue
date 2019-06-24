@@ -7,17 +7,17 @@
           img.detail_titleImage1(src="~assets/images/title2.png")
           ul.detail_items
             detail-item(
-              v-bind:heading="`プログラミング初心者でも大丈夫！`"
-              v-bind:subtext="`夏休み期間中に開催される<a href='/workshop'>プログラミング体験イベント（ワークショップ）</a>に参加して、作品作りのアイディアを考えよう！自由研究にもピッタリ！`")
+              heading='プログラミング初心者でも大丈夫！'
+              subtext='夏休み期間中に開催される<a href="/workshop">プログラミング体験イベント（ワークショップ）</a>に参加して、作品作りのアイディアを考えよう！自由研究にもピッタリ！')
             detail-item(
-              v-bind:heading="`応募内容は自由！`"
-              v-bind:subtext="`ゲームやアプリ、ロボットや電子工作など、オリジナルのプログラム作品であれば何でもOK。`")
+              heading='応募内容は自由！'
+              subtext='ゲームやアプリ、ロボットや電子工作など、オリジナルのプログラム作品であれば何でもOK。')
             detail-item(
-              v-bind:heading="`最終審査会で自分の作品をアピール！`"
-              v-bind:subtext="`ノミネート作品に選ばれた人は、最終審査会で作品をプレゼンすると優秀作品に選ばれる確率がUP！`")
+              heading='最終審査会で自分の作品をアピール！'
+              subtext='ノミネート作品に選ばれた人は、最終審査会で作品をプレゼンすると優秀作品に選ばれる確率がUP！')
             detail-item(
-              v-bind:heading="`豪華賞品がいっぱい！`"
-              v-bind:subtext="`ノートパソコンやタブレットなど、豪華な副賞、協賛証がたくさんあります。`")
+              heading='豪華賞品がいっぱい！'
+              subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛証がたくさんあります。')
 </template>
 
 <script>

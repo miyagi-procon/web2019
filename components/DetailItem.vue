@@ -1,18 +1,12 @@
 <template lang="pug">
   .detail_wrapper
-    p.detail_heading {{ headingText }}
-    p.detail_subtext <span v-html="subtextText"></span>
+    p.detail_heading {{ heading }}
+    p.detail_subtext <span v-html="subtext"></span>
 </template>
 
 <script>
 export default {
-  props: ['heading', 'subtext'],
-  data() {
-    return {
-      headingText: this.heading,
-      subtextText: this.subtext
-    }
-  }
+  props: ['heading', 'subtext']
 }
 </script>
 
@@ -50,13 +44,4 @@ export default {
 .detail_subtext
   font-size 1rem
   margin-bottom 1rem
-// .detail_text-large
-//   font-weight 700
-//   @media screen and (max-width: 740px)
-//     font-size 1.5rem
-//   @media screen and (min-width: 740px)
-//     font-size 2rem
-
-// .detail_text-orange
-//   color THEME_ORANGE
 </style>

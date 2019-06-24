@@ -16,6 +16,7 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      // { rel: 'stylesheet', href: 'href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"' }
     ]
   },
 
