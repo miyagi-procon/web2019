@@ -75,7 +75,7 @@ export default {
   width 95%
   height 90%
   top 10%
-  left 10%
+  left 5%
   z-index -1
 
 .about_titleImage1
@@ -88,7 +88,7 @@ export default {
     max-height 30vmin
 
 .about_text
-  padding 7rem 2rem 2rem 6rem
+  padding 7rem 2rem 2rem 4rem
   @media screen and (max-width: 740px)
     font-size 1.2rem
   @media screen and (min-width: 740px)
