@@ -4,17 +4,22 @@
       .sponsors_wrapper
         p.text.sponsors_text <span class='text-emphasis'>【協賛】</span>
         .sponsors_image.sponsors_bottom
-          img.sponsors_image_item(src="~assets/images/sakura.jpg")
-          img.sponsors_image_item(src="~assets/images/itp.jpg")
-          img.sponsors_image_item(src="~assets/images/umezawa.gif")
+          a.sponsors_image_link(href="https://www.sakura.ad.jp/" target="_blank")
+            img.sponsors_image_item5(src="~assets/images/sakura.jpg")
+          a.sponsors_image_link(href="http://it-p.jp/" target="_blank")
+            img.sponsors_image_item(src="~assets/images/itp.jpg")
+          a.sponsors_image_link(href="http://www.umezawa.co.jp/" target="_blank")
+            img.sponsors_image_item(src="~assets/images/umezawa.gif")
 
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【主催】</span>
           <br/>みやぎプロコン実行委員会
 
         p.text.sponsors_text <span class='text-emphasis'>【共催】</span>
           .sponsors_image.sponsors_bottom
-            img.sponsors_image_item2(src="~assets/images/pcn.jpg")
-            img.sponsors_image_item(src="~assets/images/sendai-kosen.jpg")
+            a.sponsors_image_link(href="http://sendai.pcn.club/" target="_blank")
+              img.sponsors_image_item2(src="~assets/images/pcn.jpg")
+            a.sponsors_image_link(href="https://www.sendai-nct.ac.jp/" target="_blank")
+              img.sponsors_image_item(src="~assets/images/sendai-kosen.jpg")
 
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【後援】</span>
           <br/>宮城県
@@ -25,12 +30,14 @@
 
         p.text.sponsors_text <span class='text-emphasis'>【特別協力】</span>
           .sponsors_image.sponsors_bottom
-            img.sponsors_image_item3(src="~assets/images/thinkShake.png")
-            img.sponsors_image_item4(src="~assets/images/folk-glocal-works.png")
+            a.sponsors_image_link(href="https://thinkshake.net/" target="_blank")
+              img.sponsors_image_item3(src="~assets/images/thinkShake.png")
+            a.sponsors_image_link(href="https://www.folkgw.com/" target="_blank")
+              img.sponsors_image_item4(src="~assets/images/folk-glocal-works.png")
 
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【協力】</span>
           <br/>一般社団法人PCN
-          <br/>一般社団法人イトナブ石巻
+          <br/><a href="http://itnav.jp/" target="_blank">一般社団法人イトナブ石巻</a>
           <br/>NTTドコモ
 </template>
 
@@ -64,12 +71,18 @@ export default {}
   display flex
   flex-direction column
   align-items center
+
+.sponsors_image_link
+  display flex
+  justify-content center
+  width 100%
+
 .sponsors_image_item
   @media screen and (max-width: 740px)
     width 80%
   @media screen and (min-width: 740px)
     width 60%
-  margin-bottom 5vmin
+  margin-bottom 7vmin
 
 .sponsors_image_item2
   @media screen and (max-width: 740px)
@@ -91,4 +104,11 @@ export default {}
   @media screen and (min-width: 740px)
     width 30%
   margin-bottom 5vmin
+
+.sponsors_image_item5
+  @media screen and (max-width: 740px)
+    width 80%
+  @media screen and (min-width: 740px)
+    width 60%
+  margin-bottom 2vmin
 </style>
