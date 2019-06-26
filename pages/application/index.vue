@@ -63,12 +63,15 @@ export default {
 
 .application_wrapper
   background-color BG_COLOR
-  width 80vw
   display flex
   flex-direction column
   justify-content center
   align-items center
   margin-bottom 10vmin
+  @media screen and (max-width: 740px)
+    width 95vw
+  @media screen and (min-width: 740px)
+    width 80vw
 
 
 .application_description
