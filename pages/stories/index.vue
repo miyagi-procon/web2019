@@ -119,8 +119,8 @@ export default {
 
 .stories_card
   width 100%
-  margin 2rem 0
-  filter drop-shadow(10px 10px 10px rgba(0,0,0,0.3))
+  margin 4rem 0
+  box-shadow .5rem 1rem 1rem .5rem rgba(0,0,0,0.2)
   padding 2rem
   &-blue
     background-color THEME_BLUE
