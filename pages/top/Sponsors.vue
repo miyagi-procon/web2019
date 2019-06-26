@@ -21,13 +21,6 @@
             a.sponsors_image_link(href="https://www.sendai-nct.ac.jp/" target="_blank")
               img.sponsors_image_item(src="~assets/images/sendai-kosen.jpg")
 
-        p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【後援】</span>
-          <br/>宮城県
-          <br/>仙台市
-          <br/>宮城県教育委員会
-          <br/>仙台市教育委員会
-          <br/>宮城県高度情報化推進協議会
-
         p.text.sponsors_text <span class='text-emphasis'>【特別協力】</span>
           .sponsors_image.sponsors_bottom
             a.sponsors_image_link(href="https://thinkshake.net/" target="_blank")
@@ -39,6 +32,13 @@
           <br/>一般社団法人PCN
           <br/><a href="http://itnav.jp/" target="_blank">一般社団法人イトナブ石巻</a>
           <br/>NTTドコモ
+
+        p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【後援】</span>
+          <br/>宮城県
+          <br/>仙台市
+          <br/>宮城県教育委員会
+          <br/>仙台市教育委員会
+          <br/>宮城県高度情報化推進協議会
 </template>
 
 <script>
