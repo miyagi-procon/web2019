@@ -57,8 +57,8 @@
             subtitle='自由研究に使えるかも'
             place='仙台市'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-            color='orange'
-            link='https://thinkshake.net')
+            color='orange')
+            //- link='https://thinkshake.net')
           workshop-card(
             date='8/25'
             day='日'

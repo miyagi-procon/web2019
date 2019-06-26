@@ -8,6 +8,7 @@
         p {{ date2 }}
         p [{{ day2 }}]
       a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
+      p.workshopCard_soon(v-bind:class="{ 'workshopCard-hidden': linkExist }") 詳細は<br/>もうすぐ！
     .workshopCard_content
       p.workshopCard_heading {{ title }}
       p.workshopCard_subtext1 <span v-html="subtitle"></span>
@@ -132,4 +133,9 @@ export default {
   color BASE_COLOR
   &:visited
     color BASE_COLOR
+
+.workshopCard_soon
+  color BG_COLOR
+  text-align center
+  margin 1rem 0
 </style>
