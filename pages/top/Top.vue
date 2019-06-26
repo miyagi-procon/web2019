@@ -5,6 +5,7 @@
       top-image2
       top-image3
       top-image4
+      top-image5
       router-link.top_stories(to="/stories") コンセプトストーリーへ
     .menubar_wrapper
       menu-bar
@@ -15,6 +16,7 @@ import TopImage1 from '~/components/TopImage1.vue'
 import TopImage2 from '~/components/TopImage2.vue'
 import TopImage3 from '~/components/TopImage3.vue'
 import TopImage4 from '~/components/TopImage4.vue'
+import TopImage5 from '~/components/TopImage5.vue'
 import MenuBar from '~/components/MenuBar'
 
 export default {
@@ -23,6 +25,7 @@ export default {
     TopImage2,
     TopImage3,
     TopImage4,
+    TopImage5,
     MenuBar
   }
 }
@@ -45,7 +48,7 @@ export default {
   width 100%
   position absolute
   animation-name slide
-  animation-duration 16s
+  animation-duration 20s
   animation-iteration-count infinite
   opacity 0
   @media screen and (max-width: 740px)

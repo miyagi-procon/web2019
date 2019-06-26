@@ -24,8 +24,8 @@ export default {}
 
 .top_text4
   font-weight 700
-  background-color BG_COLOR_T
-  color BASE_COLOR
+  // background-color BG_COLOR_T
+  color BG_COLOR
   position absolute
   text-align center
   padding 2rem 2rem
@@ -33,9 +33,9 @@ export default {}
   @media screen and (max-width: 740px)
     font-size 2rem
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    font-size 3rem
+    font-size 2.5rem
   @media screen and (min-width: 1080px)
-    font-size 4rem
+    font-size 3.5rem
 
 .top_image4-1
   position absolute

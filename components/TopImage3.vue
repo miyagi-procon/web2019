@@ -23,11 +23,11 @@ export default {}
     width 100%
     top 15%
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    font-size 3rem
+    font-size 2.5rem
     right 5%
     top 30%
   @media screen and (min-width: 1080px)
-    font-size 4rem
+    font-size 3.5rem
     right 5%
     top 35%
 

@@ -1,6 +1,6 @@
 <template lang="pug">
   .top_wrapper.top_wrapper2
-    p.top_text2 ともだちの気持ちを<br/>計れる<br/>センサー。
+    p.top_text2 ともだちの気持ちを<br/>計れる<br/>メーター。
     img.top_image2(src="~assets/images/slideillust2.png")
 </template>
 
@@ -24,12 +24,12 @@ export default {}
     top 15%
   @media screen and (min-width: 740px) and (max-width: 1080px)
     text-align right
-    font-size 3rem
+    font-size 2.5rem
     right 10vw
     top 20%
   @media screen and (min-width: 1080px)
     text-align center
-    font-size 4rem
+    font-size 3.5rem
     right 10vw
     top 30%
 
