@@ -76,7 +76,8 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='gray')
+            color='gray'
+            link='http://itnav.jp/itnavjuku/')
 </template>
 
 <script>
