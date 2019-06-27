@@ -17,7 +17,7 @@
               subtext='ノミネート作品に選ばれた人は、最終審査会で作品をプレゼンすると優秀作品に選ばれる確率がUP！')
             detail-item(
               heading='豪華賞品がいっぱい！'
-              subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛証がたくさんあります。')
+              subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛賞がたくさんあります。')
       a.detail_toApplication(href="/application") 応募について見る
 </template>
 
