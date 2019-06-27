@@ -15,7 +15,8 @@
             subtitle='自動ブレーキ自動車をつくってみよう'
             place='仙台市'
             organizer='みやぎプロコン実行委員会'
-            color='blue')
+            color='blue'
+            link='http://www.science-day.com/program/?ID=e2019-697')
           workshop-card(
             date='7/27'
             day='土'
@@ -43,22 +44,31 @@
             organizer='株式会社GRA'
             color='blue')
           workshop-card(
-            date='8/21'
-            day='水'
-            title='(仮)ロボット工作＆プログラミングWS'
-            subtitle='embotを使っておとなの「困った」を解決しよう！'
-            place='仙台市ドコモ東北ビル'
-            organizer='NTTドコモ'
-            color='gray')
-          workshop-card(
             date='8/17'
             day='土'
             title='IchigoJamを使って気軽にプログラミングデビュー！'
             subtitle='自由研究に使えるかも'
             place='仙台市'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
+            color='gray')
+          workshop-card(
+            date='8/21'
+            day='水'
+            title='(仮)ロボット工作＆プログラミングWS'
+            subtitle='embotを使っておとなの「困った」を解決しよう！'
+            place='仙台市ドコモ東北ビル'
+            organizer='NTTドコモ'
             color='orange')
-            //- link='https://thinkshake.net')
+          workshop-card(
+            date='8/24'
+            day='土'
+            date2='8/25'
+            day2='日'
+            title='アイディアハッカソン＆電子工作'
+            subtitle='家族の困ったを解決するひみつ道具を作ろう'
+            place='仙台市'
+            organizer='株式会社アイティプロジェクト'
+            color='blue')
           workshop-card(
             date='8/25'
             day='日'
@@ -66,7 +76,7 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='blue')
+            color='gray')
 </template>
 
 <script>
