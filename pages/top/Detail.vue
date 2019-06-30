@@ -19,6 +19,9 @@
               heading='豪華賞品がいっぱい！'
               subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛賞がたくさんあります。')
       a.detail_toApplication(href="/application") 応募について見る
+      .detail_flex
+        a.detail_toFile(href="/flyer.pdf") チラシを見る
+        a.detail_toFile(href="/poster.pdf") ポスターを見る
 </template>
 
 <script>
@@ -98,8 +101,24 @@ export default {
   text-decoration none
   border-radius 1rem
   text-align center
-  margin 2rem 0 4rem
+  margin 2rem 0 2rem
   color BASE_COLOR
   &:visited
     color BASE_COLOR
+
+.detail_toFile
+  background-color BG_COLOR_T
+  font-size 1rem
+  padding 1rem
+  text-decoration none
+  border-radius 1rem
+  text-align center
+  margin 2rem 2rem 4rem
+  color BASE_COLOR
+  &:visited
+    color BASE_COLOR
+
+.detail_flex
+  display flex
+  flex-wrap wrap
 </style>
