@@ -23,7 +23,7 @@
           <br/>でも今やエンターテイメントをつくる面白さに夢中です。
           <br/>こどもたちは、まっさらな０の状態。
           <br/>可能性を広げる小さな１歩を、応援してあげませんか。
-        p.stories_card_keyword まっさらな0, 可能性の1歩。
+        p.stories_card_keyword まっさらな０、可能性の１歩。
 
       .stories_card.stories_card-orange.unvisible#story2(v-bind:class="{ show: showStory2 }")
         p.stories_card_main 図工の時間に、あったらいいなと思うどうぐをつくりました。
@@ -38,7 +38,7 @@
           <br/>もちろん、すきなこと、向いていることが何なのか、見出せないこともあります。
           <br/>「好き」のきっかけづくりができるように、ものづくりの形がひとつではないことを味わってもらいたいと考えています。
           <br/>できた！わかった！やった！０が１に変わるよろこびを、宮城のこどもたちに。
-        p.stories_card_keyword 0が1に変わるよろこびを。
+        p.stories_card_keyword ０が１に変わるよろこびを。
 </template>
 
 <script>
@@ -130,23 +130,28 @@ export default {
 .stories_card_main
   color BG_COLOR
   font-size 1.6rem
-  // font-weight 600
   @media screen and (max-width: 740px)
     line-height 2.5rem
+    letter-spacing .05rem
   @media screen and (min-width: 740px)
     line-height 3rem
+    letter-spacing .1rem
 
 .stories_card_sub
   margin-top 6rem
   font-weight 600
   font-size 1.2rem
+  letter-spacing .05rem
+  line-height 2rem
 
 .stories_card_keyword
   color BG_COLOR
   margin-top 6rem
   font-weight 600
   @media screen and (max-width: 740px)
-    font-size 1.8rem
+    font-size 1.7rem
+    letter-spacing .05rem
   @media screen and (min-width: 740px)
     font-size 2rem
+    letter-spacing .2rem
 </style>
