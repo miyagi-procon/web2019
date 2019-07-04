@@ -26,7 +26,7 @@ export default {}
   @media screen and (max-width: 740px)
     max-height 37vmin
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    max-height 30vmin
+    max-height 26vmin
   @media screen and (min-width: 1080px)
     max-height 45vmin
 

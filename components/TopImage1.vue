@@ -20,7 +20,7 @@ export default {}
     left 0
     top 25%
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    max-height 20vmin
+    max-height 17vmin
     left 5vw
     top 40%
   @media screen and (min-width: 1080px)
