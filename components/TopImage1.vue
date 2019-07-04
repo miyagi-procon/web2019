@@ -1,6 +1,6 @@
 <template lang="pug">
   .top_wrapper.top_wrapper1
-    p.top_text1 気分にあわせて<br/>光る花。
+    img.top_textImage1(src="~assets/images/slide1_text.png")
     img.top_image1(src="~assets/images/slideillust1.png")
 </template>
 
@@ -13,21 +13,18 @@ export default {}
   background-color THEME_ORANGE
   animation-delay 0s
 
-.top_text1
-  text-align center
-  font-weight 700
-  color BG_COLOR
+.top_textImage1
   position absolute
   @media screen and (max-width: 740px)
-    font-size 2rem
-    left 10vw
+    max-height 24vmin
+    left 0
     top 25%
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    font-size 2.5rem
-    left 10vw
+    max-height 20vmin
+    left 5vw
     top 40%
   @media screen and (min-width: 1080px)
-    font-size 3.5rem
+    max-height 30vmin
     left 10vw
     top 40%
 

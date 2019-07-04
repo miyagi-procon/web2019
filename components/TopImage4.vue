@@ -3,7 +3,7 @@
     img.top_image4-1(src="~assets/images/slideillust4-1.png")
     img.top_image4-2(src="~assets/images/slideillust4-2.png")
     .top_text_wrapper
-      p.top_text4 こどもたちの<br/>アイディアと可能性は<br/>無限大。
+      img.top_textImage4(src="~assets/images/slide4_text.png")
 </template>
 
 <script>
@@ -22,20 +22,13 @@ export default {}
   justify-content center
   align-items center
 
-.top_text4
-  font-weight 700
-  // background-color BG_COLOR_T
-  color BG_COLOR
-  position absolute
-  text-align center
-  padding 2rem 2rem
-  border-radius 2rem
+.top_textImage4
   @media screen and (max-width: 740px)
-    font-size 2rem
+    max-height 37vmin
   @media screen and (min-width: 740px) and (max-width: 1080px)
-    font-size 2.5rem
+    max-height 30vmin
   @media screen and (min-width: 1080px)
-    font-size 3.5rem
+    max-height 45vmin
 
 .top_image4-1
   position absolute
