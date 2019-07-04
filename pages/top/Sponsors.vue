@@ -32,6 +32,7 @@
           <br/>一般社団法人PCN
           <br/><a href="http://itnav.jp/" target="_blank">一般社団法人イトナブ石巻</a>
           <br/>NTTドコモ
+          <br/><a href="https://corp.diddyworks.co.jp/" target="_brank">株式会社diddyworks</a>
 
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【後援】</span>
           <br/>宮城県
