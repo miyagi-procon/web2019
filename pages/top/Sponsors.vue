@@ -16,10 +16,10 @@
 
         p.text.sponsors_text <span class='text-emphasis'>【共催】</span>
           .sponsors_image.sponsors_bottom
-            a.sponsors_image_link2(href="http://sendai.pcn.club/" target="_blank")
-              img(src="~assets/images/pcn.jpg")
             a.sponsors_image_link(href="https://www.sendai-nct.ac.jp/" target="_blank")
               img(src="~assets/images/sendai-kosen.jpg")
+            a.sponsors_image_link2(href="http://sendai.pcn.club/" target="_blank")
+              img(src="~assets/images/pcn.jpg")              
 
         p.text.sponsors_text <span class='text-emphasis'>【特別協力】</span>
           .sponsors_image.sponsors_bottom
