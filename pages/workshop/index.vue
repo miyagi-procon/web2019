@@ -26,7 +26,8 @@
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
-            color='gray')
+            color='gray'
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')            
           workshop-card(
             date='8/3'
             day='土'
@@ -34,7 +35,8 @@
             subtitle='いろんなセンサーを使ったものづくり体験'
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
-            color='orange')
+            color='orange'
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')             
           workshop-card(
             date='8/7'
             day='水'
@@ -43,7 +45,7 @@
             place='山元町「ICHIGO WORLD」'
             organizer='株式会社GRA'
             color='blue'
-            link='')
+            link='https://forms.gle/diFQfkfhhwVTmtRZ7')
           workshop-card(
             date='8/11'
             day='日'
@@ -53,7 +55,7 @@
             subtitle='オリジナルゲーム制作やロボット制御に挑戦！'
             place='仙台市'
             organizer='緑と風のガーデン'
-            color='blue'
+            color='gray'
             link='https://midori-kaze-garden.jp/event_201907/')            
           workshop-card(
             date='8/17'
@@ -62,7 +64,7 @@
             subtitle='自由研究に使えるかも'
             place='仙台市'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-            color='gray')
+            color='orange')
           workshop-card(
             date='8/21'
             day='水'
@@ -70,7 +72,7 @@
             subtitle='embotを使っておとなの「困った」を解決しよう！'
             place='仙台市ドコモ東北ビル'
             organizer='NTTドコモ'
-            color='orange')
+            color='blue')
           workshop-card(
             date='8/24'
             day='土'
@@ -80,7 +82,8 @@
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
-            color='blue')
+            color='gray'
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')            
           workshop-card(
             date='8/25'
             day='日'
@@ -88,7 +91,7 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='gray'
+            color='orange'
             link='http://itnav.jp/itnavjuku/')
 </template>
 
