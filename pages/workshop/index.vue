@@ -36,13 +36,25 @@
             organizer='株式会社アイティプロジェクト'
             color='orange')
           workshop-card(
-            date='8/6'
-            day='火'
-            title='センサープログラミング'
-            subtitle='いちご畑の困ったをプログラミングの力で解決！'
+            date='8/7'
+            day='水'
+            title='ＩＴの力でいちご畑を救おう！'
+            subtitle='温度センサーで室温調整に挑戦！'
             place='山元町「ICHIGO WORLD」'
             organizer='株式会社GRA'
-            color='blue')
+            color='blue'
+            link='')
+          workshop-card(
+            date='8/11'
+            day='日'
+            date2='8/12'
+            day2='祝・月'
+            title='やってみよう！プログラミング'
+            subtitle='オリジナルゲーム制作やロボット制御に挑戦！'
+            place='仙台市'
+            organizer='緑と風のガーデン'
+            color='blue'
+            link='https://midori-kaze-garden.jp/event_201907/')            
           workshop-card(
             date='8/17'
             day='土'
