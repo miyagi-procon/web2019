@@ -5,6 +5,10 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='ワークショップの申し込み、続々開始してます！'
+            subtext='各ワークショップの申し込みが開始しています。<br/><a href="/workshop">ワークショップページ</a>から興味があるワークショップのリンクを辿り、申し込んでみてください！'
+            date='2019/7/16')
+          news-item(
             heading='ワークショップの情報を追加しました'
             subtext='関連ワークショップの情報を追加しました。<br/><a href="/workshop">こちら</a>からチェックしてみてください！'
             date='2019/6/27')
