@@ -93,7 +93,8 @@
             subtitle='自由研究に使えるかも'
             place='仙台市'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-            color='gray')
+            color='gray'
+            link='https://peraichi.com/landing_pages/view/wackhacksendai')
           workshop-card(
             date='8/21'
             day='水'
