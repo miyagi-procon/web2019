@@ -25,7 +25,7 @@
             place='仙台市'
             organizer='マジカルコンパススクール'
             color='gray'
-            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')            
+            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
           workshop-card(
             date='7/27'
             day='土'
@@ -36,7 +36,7 @@
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
             color='orange'
-            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')            
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
           workshop-card(
             date='8/3'
             day='土'
@@ -45,7 +45,7 @@
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
             color='orange'
-            link='http://sendai.pcn.club/ws/miyagiprocon2019.html') 
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
           workshop-card(
             date='8/5'
             day='月'
@@ -56,7 +56,7 @@
             place='仙台市'
             organizer='マジカルコンパススクール'
             color='blue'
-            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')              
+            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
           workshop-card(
             date='8/7'
             day='水'
@@ -74,7 +74,7 @@
             place='仙台市'
             organizer='マジカルコンパススクール'
             color='orange'
-            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')               
+            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
           workshop-card(
             date='8/11'
             day='日'
@@ -85,7 +85,7 @@
             place='仙台市'
             organizer='緑と風のガーデン'
             color='blue'
-            link='https://midori-kaze-garden.jp/event_201907/')            
+            link='https://midori-kaze-garden.jp/event_201907/')
           workshop-card(
             date='8/17'
             day='土'
@@ -112,7 +112,7 @@
             place='仙台市'
             organizer='株式会社アイティプロジェクト'
             color='blue'
-            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')            
+            link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
           workshop-card(
             date='8/25'
             day='日'
