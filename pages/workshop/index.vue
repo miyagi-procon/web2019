@@ -9,20 +9,11 @@
           <br/>ワークショップに参加して、みやぎプロコンに応募しよう！
         .workshop_lists
           workshop-card(
-            date='7/14'
-            day='日'
-            title='センサー＆ロボットプログラミング'
-            subtitle='自動ブレーキ自動車をつくってみよう'
-            place='仙台市'
-            organizer='みやぎプロコン実行委員会'
-            color='blue'
-            link='http://www.science-day.com/program/?ID=e2019-697')
-          workshop-card(
             date='7/23'
             day='火'
             title='ロボット組立＆プログラミング体験'
             subtitle='映画スターウォーズに登場するR2ユニットの組立て＆プログラミング'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='マジカルコンパススクール'
             color='gray'
             link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
@@ -33,7 +24,7 @@
             day2='日'
             title='アイディアハッカソン＆電子工作'
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='株式会社アイティプロジェクト'
             color='orange'
             link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
@@ -42,7 +33,7 @@
             day='土'
             title='センサーをつかった電子工作'
             subtitle='いろんなセンサーを使ったものづくり体験'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='株式会社アイティプロジェクト'
             color='blue'
             link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
@@ -53,7 +44,7 @@
             day2='火'
             title='ロボット組立＆プログラミング体験'
             subtitle='映画スターウォーズに登場するR2ユニットの組立て＆プログラミング'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='マジカルコンパススクール'
             color='gray'
             link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
@@ -76,6 +67,15 @@
             color='blue'
             link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
           workshop-card(
+            date='8/9'
+            day='金'
+            title='「知る・考える・学ぶ・伝える」～Switch in 富谷'
+            subtitle='センサー、モーター、サウンド、ライトで何ができるかな？'
+            place='富谷市'
+            organizer='NPO法人　ふうどばんく東北AGAIN'
+            color='gray'
+            link='https://www.fut-messe.com/switch-tomiya/')            
+          workshop-card(
             date='8/11'
             day='日'
             date2='8/12'
@@ -84,25 +84,26 @@
             subtitle='オリジナルゲーム制作やロボット制御に挑戦！'
             place='仙台市'
             organizer='緑と風のガーデン'
-            color='gray'
+            color='orange'
             link='https://midori-kaze-garden.jp/event_201907/')
           workshop-card(
             date='8/17'
             day='土'
             title='IchigoJamを使って気軽にプログラミングデビュー！'
             subtitle='自由研究に使えるかも'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-            color='orange'
+            color='blue'
             link='https://peraichi.com/landing_pages/view/wackhacksendai')
           workshop-card(
             date='8/21'
             day='水'
-            title='(仮)ロボット工作＆プログラミングWS'
-            subtitle='embotを使っておとなの「困った」を解決しよう！'
+            title='embotを使ってロボット工作＆プログラミング'
+            subtitle='「身近な困りごと」を解決しよう！（※embotをすでにお持ちの小中学生限定）'
             place='仙台市ドコモ東北ビル'
             organizer='NTTドコモ'
-            color='blue')
+            color='gray'
+            link='https://forms.gle/DR1iFV9rn3rjinUd9')
           workshop-card(
             date='8/24'
             day='土'
@@ -110,7 +111,7 @@
             day2='日'
             title='アイディアハッカソン＆電子工作'
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
-            place='仙台市'
+            place='仙台市（長町）'
             organizer='株式会社アイティプロジェクト'
             color='gray'
             link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
