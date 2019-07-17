@@ -72,9 +72,9 @@
             title='「知る・考える・学ぶ・伝える」～Switch in 富谷'
             subtitle='センサー、モーター、サウンド、ライトで何ができるかな？'
             place='富谷市'
-            organizer='NPO法人　ふうどばんく東北AGAIN'
+            organizer='NPO法人 ふうどばんく東北AGAIN'
             color='gray'
-            link='https://www.fut-messe.com/switch-tomiya/')            
+            link='https://www.fut-messe.com/switch-tomiya/')
           workshop-card(
             date='8/11'
             day='日'
@@ -113,7 +113,7 @@
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
             place='仙台市（長町）'
             organizer='株式会社アイティプロジェクト'
-            color='gray'
+            color='orange'
             link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
           workshop-card(
             date='8/25'
@@ -122,7 +122,7 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='orange'
+            color='blue'
             link='http://itnav.jp/itnavjuku/')
 </template>
 
