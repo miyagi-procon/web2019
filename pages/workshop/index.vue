@@ -9,15 +9,6 @@
           <br/>ワークショップに参加して、みやぎプロコンに応募しよう！
         .workshop_lists
           workshop-card(
-            date='7/23'
-            day='火'
-            title='ロボット組立＆プログラミング体験'
-            subtitle='映画スターウォーズに登場するR2ユニットの組立て＆プログラミング'
-            place='仙台市（長町）'
-            organizer='マジカルコンパススクール'
-            color='gray'
-            link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
-          workshop-card(
             date='7/27'
             day='土'
             date2='7/28'
@@ -98,6 +89,15 @@
             color='blue'
             link='https://www.fut-messe.com/switch-tomiya/')
           workshop-card(
+            date='8/10'
+            day='土'
+            title='自分や家族の悩みをプログラミングで解決しちゃおう！'
+            subtitle='micro:bitで簡単工作＆プログラミング'
+            place='宮城教育大学(5号館1階 未来の教室)'
+            organizer='みやぎプロコン実行委員会'
+            color='gray'
+            link='http://sendai.pcn.club/ws/miyagiprocon2019-0810.html')           
+          workshop-card(
             date='8/11'
             day='日'
             date2='8/12'
@@ -106,7 +106,7 @@
             subtitle='オリジナルゲーム制作やロボット制御に挑戦！'
             place='仙台市'
             organizer='緑と風のガーデン'
-            color='gray'
+            color='orange'
             link='https://midori-kaze-garden.jp/event_201907/')
           workshop-card(
             date='8/17'
@@ -115,7 +115,7 @@
             subtitle='自由研究に使えるかも'
             place='仙台市（長町）'
             organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-            color='orange'
+            color='bule'
             link='https://peraichi.com/landing_pages/view/wackhacksendai')
           workshop-card(
             date='8/21'
@@ -124,7 +124,7 @@
             subtitle='「身近な困りごと」を解決しよう！（※embotをすでにお持ちの小中学生限定）'
             place='仙台市ドコモ東北ビル'
             organizer='NTTドコモ'
-            color='blue'
+            color='gray'
             link='https://forms.gle/DR1iFV9rn3rjinUd9')
           workshop-card(
             date='8/24'
@@ -135,7 +135,7 @@
             subtitle='家族の困ったを解決するひみつ道具を作ろう！'
             place='仙台市（長町）'
             organizer='株式会社アイティプロジェクト'
-            color='gray'
+            color='orange'
             link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
           workshop-card(
             date='8/25'
@@ -144,7 +144,7 @@
             subtitle='Scratchを使ってゲームを作成'
             place='石巻市'
             organizer='一般社団法人イトナブ'
-            color='orange'
+            color='bule'
             link='http://itnav.jp/itnavjuku/')
 </template>
 
