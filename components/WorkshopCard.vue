@@ -2,10 +2,10 @@
   .workshopCard_wrapper(v-bind:style="{ backgroundColor: activeColor }")
     .workshopCard_dateWrapper
       .workshopCard_date
-        p {{ date }}
+        p {{ dateString }}
         p [{{ day }}]
       .workshopCard_date(v-bind:class="{ 'workshopCard-hidden': !date2Exist }")
-        p {{ date2 }}
+        p {{ date2String }}
         p [{{ day2 }}]
       a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
       p.workshopCard_soon(v-bind:class="{ 'workshopCard-hidden': linkExist }") 詳細は<br/>もうすぐ！
@@ -28,27 +28,31 @@ export default {
     'subtitle',
     'place',
     'organizer',
-    'color',
+    'colorIndex',
     'link'
   ],
   data() {
     let activeColor
-    switch (this.color) {
-      case 'gray':
+    switch (this.colorIndex % 3) {
+      case 1:
         activeColor = 'rgb(181, 181, 182)'
         break
-      case 'orange':
+      case 2:
         activeColor = 'rgb(231, 119, 34)'
         break
-      case 'blue':
+      case 0:
       default:
         activeColor = 'rgb(116, 181, 228)'
         break
     }
+    const date = new Date(this.date)
+    const date2 = this.date2 ? new Date(this.date2) : null
     return {
       activeColor,
       date2Exist: this.date2 && this.day2,
-      linkExist: this.link
+      linkExist: this.link,
+      dateString: `${date.getMonth() + 1}/${date.getDate()}`,
+      date2String: date2 ? `${date2.getMonth() + 1}/${date2.getDate()}` : ''
     }
   }
 }
