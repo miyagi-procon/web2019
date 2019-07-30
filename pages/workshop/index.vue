@@ -9,7 +9,7 @@
           <br/>ワークショップに参加して、みやぎプロコンに応募しよう！
         .workshop_lists
           workshop-card(
-            v-for="(workshop, index) in workshops"
+            v-for="(workshop, index) in futureWorkshops"
             :date="workshop.date"
             :day="workshop.day"
             :date2="workshop.date2"
@@ -21,144 +21,21 @@
             :colorIndex="index"
             :link="workshop.link"
           )
-          //- workshop-card(
-          //-   date='7/27'
-          //-   day='土'
-          //-   date2='7/28'
-          //-   day2='日'
-          //-   title='IchigoJamでゲームプログラミング'
-          //-   subtitle='IchigoJamを使って川下りゲームをプログラミングで作ってみよう'
-          //-   place='名取市'
-          //-   organizer='仙台高等専門学校'
-          //-   color='orange'
-          //-   link='https://connpass.com/event/140198/')
-          //- workshop-card(
-          //-   date='7/27'
-          //-   day='土'
-          //-   date2='7/28'
-          //-   day2='日'
-          //-   title='アイディアハッカソン＆電子工作'
-          //-   subtitle='家族の困ったを解決するひみつ道具を作ろう！'
-          //-   place='仙台市（長町）'
-          //-   organizer='株式会社アイティプロジェクト'
-          //-   color='bule'
-          //-   link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
-          //- workshop-card(
-          //-   date='8/3'
-          //-   day='土'
-          //-   title='センサーをつかった電子工作'
-          //-   subtitle='いろんなセンサーを使ったものづくり体験'
-          //-   place='仙台市（長町）'
-          //-   organizer='株式会社アイティプロジェクト'
-          //-   color='gray'
-          //-   link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
-          //- workshop-card(
-          //-   date='8/3'
-          //-   day='土'
-          //-   date2='8/4'
-          //-   day2='日'
-          //-   title='センサープログラミングで自動ブレーキシステム'
-          //-   subtitle='センサーがついたロボットカーをプログラミングで自由自在に動かそう'
-          //-   place='仙台市'
-          //-   organizer='仙台高等専門学校'
-          //-   color='orange'
-          //-   link='https://connpass.com/event/140190/')
-          //- workshop-card(
-          //-   date='8/5'
-          //-   day='月'
-          //-   date2='8/6'
-          //-   day2='火'
-          //-   title='ロボット組立＆プログラミング体験'
-          //-   subtitle='映画スターウォーズに登場するR2ユニットの組立て＆プログラミング'
-          //-   place='仙台市（長町）'
-          //-   organizer='マジカルコンパススクール'
-          //-   color='blue'
-          //-   link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
-          //- workshop-card(
-          //-   date='8/7'
-          //-   day='水'
-          //-   title='ＩＴの力でいちご畑を救おう！'
-          //-   subtitle='温度センサーで室温調整に挑戦！'
-          //-   place='山元町「ICHIGO WORLD」'
-          //-   organizer='株式会社GRA'
-          //-   color='gray'
-          //-   link='https://forms.gle/diFQfkfhhwVTmtRZ7')
-          //- workshop-card(
-          //-   date='8/7'
-          //-   day='水'
-          //-   title='ロボット組立＆プログラミング体験'
-          //-   subtitle='映画スターウォーズに登場するR2ユニットの組立て＆プログラミング'
-          //-   place='仙台市'
-          //-   organizer='マジカルコンパススクール'
-          //-   color='orange'
-          //-   link='http://www.magicalcompath.jp/news/201907l_droid_ws.html')
-          //- workshop-card(
-          //-   date='8/9'
-          //-   day='金'
-          //-   title='「知る・考える・学ぶ・伝える」～Switch in 富谷'
-          //-   subtitle='センサー、モーター、サウンド、ライトで何ができるかな？'
-          //-   place='富谷市'
-          //-   organizer='NPO法人 ふうどばんく東北AGAIN'
-          //-   color='blue'
-          //-   link='https://www.fut-messe.com/switch-tomiya/')
-          //- workshop-card(
-          //-   date='8/10'
-          //-   day='土'
-          //-   title='自分や家族の悩みをプログラミングで解決しちゃおう！'
-          //-   subtitle='micro:bitで簡単工作＆プログラミング'
-          //-   place='宮城教育大学(5号館1階 未来の教室)'
-          //-   organizer='みやぎプロコン実行委員会'
-          //-   color='gray'
-          //-   link='http://sendai.pcn.club/ws/miyagiprocon2019-0810.html')           
-          //- workshop-card(
-          //-   date='8/11'
-          //-   day='日'
-          //-   date2='8/12'
-          //-   day2='祝・月'
-          //-   title='やってみよう！プログラミング'
-          //-   subtitle='オリジナルゲーム制作やロボット制御に挑戦！'
-          //-   place='仙台市'
-          //-   organizer='緑と風のガーデン'
-          //-   color='orange'
-          //-   link='https://midori-kaze-garden.jp/event_201907/')
-          //- workshop-card(
-          //-   date='8/17'
-          //-   day='土'
-          //-   title='IchigoJamを使って気軽にプログラミングデビュー！'
-          //-   subtitle='自由研究に使えるかも'
-          //-   place='仙台市（長町）'
-          //-   organizer='WachHackSendai(株式会社diddyworks, thinkShake製作所)'
-          //-   color='bule'
-          //-   link='https://peraichi.com/landing_pages/view/wackhacksendai')
-          //- workshop-card(
-          //-   date='8/21'
-          //-   day='水'
-          //-   title='embotを使ってロボット工作＆プログラミング'
-          //-   subtitle='「身近な困りごと」を解決しよう！（※embotをすでにお持ちの小中学生限定）'
-          //-   place='仙台市ドコモ東北ビル'
-          //-   organizer='NTTドコモ'
-          //-   color='gray'
-          //-   link='https://forms.gle/DR1iFV9rn3rjinUd9')
-          //- workshop-card(
-          //-   date='8/24'
-          //-   day='土'
-          //-   date2='8/25'
-          //-   day2='日'
-          //-   title='アイディアハッカソン＆電子工作'
-          //-   subtitle='家族の困ったを解決するひみつ道具を作ろう！'
-          //-   place='仙台市（長町）'
-          //-   organizer='株式会社アイティプロジェクト'
-          //-   color='orange'
-          //-   link='http://sendai.pcn.club/ws/miyagiprocon2019.html')
-          //- workshop-card(
-          //-   date='8/25'
-          //-   day='日'
-          //-   title='ゲーム作成でプログラミングを学ぶ'
-          //-   subtitle='Scratchを使ってゲームを作成'
-          //-   place='石巻市'
-          //-   organizer='一般社団法人イトナブ'
-          //-   color='bule'
-          //-   link='http://itnav.jp/itnavjuku/')
+        p.workshop_text 過去に開催されたワークショップ
+        .workshop_lists
+          workshop-card(
+            v-for="(workshop, index) in pastWorkshops"
+            :date="workshop.date"
+            :day="workshop.day"
+            :date2="workshop.date2"
+            :day2="workshop.day2"
+            :title="workshop.title"
+            :subtitle="workshop.subtitle"
+            :place="workshop.place"
+            :organizer="workshop.organizer"
+            :colorIndex="index"
+            :link="workshop.link"
+          )
 </template>
 
 <script>
@@ -172,14 +49,28 @@ export default {
     WorkshopCard
   },
   data() {
-    const workshops = workshopsJson.workshops.sort((a, b) => {
+    let pastWorkshops = []
+    let futureWorkshops = []
+    workshopsJson.workshops.forEach(workshop => {
+      const today = new Date()
+      const workshopDate = new Date(workshop.date)
+      if (workshopDate < today) {
+        pastWorkshops.push(workshop)
+      } else {
+        futureWorkshops.push(workshop)
+      }
+    })
+    futureWorkshops = futureWorkshops.sort((a, b) => {
       const aDate = new Date(a.date)
       const bDate = new Date(b.date)
-      const today = new Date()
-      if (aDate <= today) return 1
       return aDate - bDate
     })
-    return { workshops }
+    pastWorkshops = pastWorkshops.sort((a, b) => {
+      const aDate = new Date(a.date)
+      const bDate = new Date(b.date)
+      return aDate - bDate
+    })
+    return { futureWorkshops, pastWorkshops }
   }
 }
 </script>
@@ -226,6 +117,8 @@ export default {
     font-size 3rem
 
 .workshop_text
+  width 100%
+  text-align center
   font-size 1.3rem
   line-height 2.5rem
   font-weight 700
