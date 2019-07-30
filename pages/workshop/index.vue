@@ -18,7 +18,7 @@
             place='名取市'
             organizer='仙台高等専門学校'
             color='orange'
-            link='https://connpass.com/event/140198/')            
+            link='https://connpass.com/event/140198/')
           workshop-card(
             date='7/27'
             day='土'
@@ -49,7 +49,7 @@
             place='仙台市'
             organizer='仙台高等専門学校'
             color='orange'
-            link='https://connpass.com/event/140190/')            
+            link='https://connpass.com/event/140190/')
           workshop-card(
             date='8/5'
             day='月'
