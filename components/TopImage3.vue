@@ -39,7 +39,7 @@ export default {}
     left 5%
     top calc(100vw * 2 / 3 - 60vmin)
   @media screen and (min-width: 1080px)
-    max-height 70vmin
+    max-height 60vmin
     left 5%
     top 20%
 </style>

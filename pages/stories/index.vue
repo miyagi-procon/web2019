@@ -1,5 +1,11 @@
 <template lang="pug">
   section#stories
+    .stories_container_top
+      top-image1
+      top-image2
+      top-image3
+      top-image4
+      top-image5
     .menubar_wrapper
       menu-bar
     .stories_container
@@ -42,11 +48,21 @@
 </template>
 
 <script>
+import TopImage1 from '~/components/TopImage1.vue'
+import TopImage2 from '~/components/TopImage2.vue'
+import TopImage3 from '~/components/TopImage3.vue'
+import TopImage4 from '~/components/TopImage4.vue'
+import TopImage5 from '~/components/TopImage5.vue'
 import MenuBar from '~/components/MenuBar'
 import appearMixin from '~/mixins/appearMixin'
 
 export default {
   components: {
+    TopImage1,
+    TopImage2,
+    TopImage3,
+    TopImage4,
+    TopImage5,
     MenuBar
   },
   mixins: [appearMixin],
@@ -81,6 +97,26 @@ export default {
   justify-content center
   align-items center
   margin 12vmin auto 0
+  &_top
+    position relative
+    @media screen and (max-width: 740px)
+      height 100vw
+    @media screen and (min-width: 740px)
+      max-height 80vh
+      height calc(100vw * 2 / 3)
+
+.top_wrapper
+  width 100%
+  position absolute
+  animation-name slide
+  animation-duration 20s
+  animation-iteration-count infinite
+  opacity 0
+  @media screen and (max-width: 740px)
+    height 100vw
+  @media screen and (min-width: 740px)
+    max-height 80vh
+    height calc(100vw * 2 / 3)
 
 .stories_title
   margin 3rem 0 1rem

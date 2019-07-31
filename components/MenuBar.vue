@@ -28,7 +28,10 @@ export default {
   },
   methods: {
     isFix: function(togglePos) {
-      if (process.browser && this.$route.path === '/') {
+      if (
+        process.browser &&
+        (this.$route.path === '/' || this.$route.path === '/stories')
+      ) {
         const [topPos] = this.$window.getElementPos('menubar', 0)
         return topPos + togglePos <= this.$window.scrollY && topPos !== 0
       } else {
