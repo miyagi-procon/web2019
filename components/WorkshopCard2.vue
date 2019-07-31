@@ -15,7 +15,7 @@
         .workshopCard_subtext2
           p <font-awesome-icon icon="map-marker-alt" style="font-size: 1rem"/> {{ place }}
           p <font-awesome-icon icon="building" style="font-size: 1rem"/> {{ organizer }}
-        a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
+        a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細 >
         p.workshopCard_soon(v-bind:class="{ 'workshopCard-hidden': linkExist }") 詳細は<br/>もうすぐ！
 </template>
 
@@ -133,12 +133,19 @@ export default {
   // float right
 
 .workshopCard_link
-  background-color BG_COLOR_T
+  background-color BG_COLOR
   font-size 1rem
+  font-weight 600
   padding 1rem
   text-decoration none
   border-radius 1rem
+  border-width .1rem
+  border-style solid
+  border-color BASE_COLOR
+  width 6rem
+  height 4rem
   text-align center
+  line-height 2rem
   margin 1rem .2rem
   color BASE_COLOR
   &:visited

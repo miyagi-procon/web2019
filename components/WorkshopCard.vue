@@ -7,7 +7,7 @@
       .workshopCard_date(v-bind:class="{ 'workshopCard-hidden': !date2Exist }")
         p {{ date2String }}
         p [{{ day2 }}]
-      a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細
+      a.workshopCard_link(target='_blank' v-bind:href="link" v-bind:class="{ 'workshopCard-hidden': !linkExist }") 詳細 >
       p.workshopCard_soon(v-bind:class="{ 'workshopCard-hidden': linkExist }") 詳細は<br/>もうすぐ！
     .workshopCard_content
       p.workshopCard_heading {{ title }}
@@ -127,12 +127,19 @@ export default {
   float right
 
 .workshopCard_link
-  background-color BG_COLOR_T
+  background-color BG_COLOR
   font-size 1rem
+  font-weight 600
   padding 1rem
   text-decoration none
   border-radius 1rem
+  border-width .1rem
+  border-style solid
+  border-color BASE_COLOR
+  width 6rem
+  height 4rem
   text-align center
+  line-height 2rem
   margin 1rem .2rem
   color BASE_COLOR
   &:visited
