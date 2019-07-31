@@ -8,7 +8,7 @@
         p.workshop_text 夏休み期間中はプログラミング体験イベントが盛りだくさん！
           <br/>ワークショップに参加して、みやぎプロコンに応募しよう！
         .workshop_lists
-          workshop-card2(
+          workshop-card(
             v-for="(workshop, index) in futureWorkshops"
             :date="workshop.date"
             :day="workshop.day"
@@ -24,7 +24,7 @@
           )
         p.workshop_text 過去に開催されたワークショップ
         .workshop_lists
-          workshop-card2(
+          workshop-card(
             v-for="(workshop, index) in pastWorkshops"
             :date="workshop.date"
             :day="workshop.day"
@@ -41,13 +41,13 @@
 
 <script>
 import MenuBar from '~/components/MenuBar'
-import WorkshopCard2 from '~/components/WorkshopCard2'
+import WorkshopCard from '~/components/WorkshopCard'
 import workshopsJson from '~/assets/json/workshops.json'
 
 export default {
   components: {
     MenuBar,
-    WorkshopCard2
+    WorkshopCard
   },
   data() {
     let pastWorkshops = []

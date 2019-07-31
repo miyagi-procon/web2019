@@ -1,12 +1,13 @@
 <template lang="pug">
   section#top
     .top_container
-      top-image1
-      top-image2
-      top-image3
-      top-image4
-      top-image5
-      router-link.top_stories(to="/stories") コンセプトストーリーへ
+      img(:src="require('@/assets/images/top.jpg')")
+      //- top-image1
+      //- top-image2
+      //- top-image3
+      //- top-image4
+      //- top-image5
+      //- router-link.top_stories(to="/stories") コンセプトストーリーへ
     .menubar_wrapper
       menu-bar
 </template>
@@ -37,12 +38,13 @@ export default {
   // margin-bottom 40vmin
 
 .top_container
-  position relative
+  background-color BASE_COLOR
+  // position relative
   @media screen and (max-width: 740px)
-    height 100vw
+    // height 100vw
   @media screen and (min-width: 740px)
-    max-height 100vh
-    height calc(100vw * 2 / 3)
+    // max-height 100vh
+    // height calc(100vw * 2 / 3)
 
 .top_wrapper
   width 100%
