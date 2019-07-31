@@ -19,16 +19,7 @@ export default {
 <style lang="stylus" scoped>
 #top
   width 100%
-  // margin-bottom 40vmin
-
-.top_container
   background-color BASE_COLOR
-  // position relative
-  @media screen and (max-width: 740px)
-    // height 100vw
-  @media screen and (min-width: 740px)
-    // max-height 100vh
-    // height calc(100vw * 2 / 3)
 
 .top_wrapper
   width 100%
