@@ -4,30 +4,28 @@
       .sponsors_wrapper
         p.text.sponsors_text <span class='text-emphasis'>【協賛】</span>
         .sponsors_image.sponsors_bottom
-          a.sponsors_image_link5(href="https://www.sakura.ad.jp/" target="_blank")
-            img(src="~assets/images/sakura.jpg")
+          a.sponsors_image_link(href="https://www.sakura.ad.jp/" target="_blank")
+            img.sponsors_sakura(src="~assets/images/sakura.jpg")
           a.sponsors_image_link(href="http://it-p.jp/" target="_blank")
-            img(src="~assets/images/itp.jpg")
+            img.sponsors_itproject(src="~assets/images/itp.jpg")
           a.sponsors_image_link(href="http://www.umezawa.co.jp/" target="_blank")
-            img(src="~assets/images/umezawa.gif")
+            img.sponsors_umezawa(src="~assets/images/umezawa.gif")
 
+      .sponsors_wrapper
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【主催】</span>
           <br/>みやぎプロコン実行委員会
-
         p.text.sponsors_text <span class='text-emphasis'>【共催】</span>
           .sponsors_image.sponsors_bottom
             a.sponsors_image_link(href="https://www.sendai-nct.ac.jp/" target="_blank")
-              img(src="~assets/images/sendai-kosen.jpg")
-            a.sponsors_image_link2(href="http://sendai.pcn.club/" target="_blank")
-              img(src="~assets/images/pcn.jpg")              
-
+              img.sponsors_kousen(src="~assets/images/sendai-kosen.jpg")
+            a.sponsors_image_link(href="http://sendai.pcn.club/" target="_blank")
+              img.sponsors_pcn(src="~assets/images/pcn.jpg")
         p.text.sponsors_text <span class='text-emphasis'>【特別協力】</span>
           .sponsors_image.sponsors_bottom
-            a.sponsors_image_link3(href="https://thinkshake.net/" target="_blank")
-              img(src="~assets/images/thinkShake.png")
-            a.sponsors_image_link4(href="https://www.folkgw.com/" target="_blank")
-              img(src="~assets/images/folk-glocal-works.png")
-
+            a.sponsors_image_link(href="https://thinkshake.net/" target="_blank")
+              img.sponsors_thinkshake(src="~assets/images/thinkShake.png")
+            a.sponsors_image_link(href="https://www.folkgw.com/" target="_blank")
+              img.sponsors_folk(src="~assets/images/folk-glocal-works.png")
         p.text.sponsors_text.sponsors_bottom <span class='text-emphasis'>【協力】</span>
           <br/>一般社団法人PCN
           <br/><a href="http://itnav.jp/" target="_blank">一般社団法人イトナブ石巻</a>
@@ -56,7 +54,7 @@ export default {}
   background-color BG_COLOR
   height 90%
   margin 10vmin 0
-  padding 10vmin 0 0
+  padding 7vmin 0 0
   @media screen and (max-width: 740px)
     width 80vw
   @media screen and (min-width: 740px)
@@ -76,41 +74,60 @@ export default {}
 
 .sponsors_image_link
   text-align center
+
+.sponsors_sakura
+  text-align center
   @media screen and (max-width: 740px)
     width 80%
   @media screen and (min-width: 740px)
-    width 60%
-  margin-bottom 7vmin
+    width 600px
+  margin-bottom 2vmin
 
-.sponsors_image_link2
+.sponsors_itproject
+  text-align center
+  margin-bottom 5vmin
+  @media screen and (max-width: 740px)
+    width 80%
+  @media screen and (min-width: 740px)
+    width 600px
+
+.sponsors_umezawa
+  text-align center
+  @media screen and (max-width: 740px)
+    width 90%
+  @media screen and (min-width: 740px)
+    width 500px
+  margin-bottom 2vmin
+
+.sponsors_kousen
   text-align center
   @media screen and (max-width: 740px)
     width 80%
   @media screen and (min-width: 740px)
     width 60%
-  margin 5vmin 0
+  margin-bottom 2vmin
 
-.sponsors_image_link3
+.sponsors_pcn
   text-align center
   @media screen and (max-width: 740px)
-    width 35%
+    width 80%
   @media screen and (min-width: 740px)
-    width 25%
-  margin 5vmin 0 8vmin
+    width 60%
+  margin-bottom 2vmin
 
-.sponsors_image_link4
+.sponsors_thinkshake
+  text-align center
+  @media screen and (max-width: 740px)
+    width 30%
+  @media screen and (min-width: 740px)
+    width 50%
+  margin-bottom 2vmin
+
+.sponsors_folk
   text-align center
   @media screen and (max-width: 740px)
     width 40%
   @media screen and (min-width: 740px)
-    width 30%
-  margin-bottom 5vmin
-
-.sponsors_image_link5
-  text-align center
-  @media screen and (max-width: 740px)
-    width 80%
-  @media screen and (min-width: 740px)
-    width 60%
+    width 20%
   margin-bottom 2vmin
 </style>
