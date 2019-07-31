@@ -1,5 +1,5 @@
 <template lang="pug">
-  .workshopCard_wrapper(v-bind:style="{ backgroundColor: activeColor }")
+  .workshopCard_wrapper
     .workshopCard_image(:style="{backgroundImage: `url(${getImage(image)})` }")
       .workshopCard_dateWrapper
         .workshopCard_date
@@ -30,28 +30,13 @@ export default {
     'subtitle',
     'place',
     'organizer',
-    'colorIndex',
     'link',
     'image'
   ],
   data() {
-    let activeColor
-    switch (this.colorIndex % 3) {
-      case 1:
-        activeColor = 'rgb(181, 181, 182)'
-        break
-      case 2:
-        activeColor = 'rgb(231, 119, 34)'
-        break
-      case 0:
-      default:
-        activeColor = 'rgb(116, 181, 228)'
-        break
-    }
     const date = new Date(this.date)
     const date2 = this.date2 ? new Date(this.date2) : null
     return {
-      activeColor,
       date2Exist: this.date2 && this.day2,
       linkExist: this.link,
       dateString: `${date.getMonth() + 1}/${date.getDate()}`,
@@ -70,7 +55,7 @@ export default {
 
 <style lang="stylus" scoped>
 .workshopCard_wrapper
-  background-color THEME_BLUE
+  background-color THEME_GRAY2
   display flex
   flex-direction column
   margin 1rem
