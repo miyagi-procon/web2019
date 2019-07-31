@@ -14,9 +14,8 @@
       p.text 宮城県の小学生・中学生(隣県も可)
         <br/>・2人以上のチームでつくった作品でも応募可
         <br/>・1人（1チーム）何作品でも応募可（※但しノミネートは1作品のみ）
-
-      h2.subheading 応募方法
-      p.text 応募方法の詳細は、後日お知らせいたします
+      a.link_applicationForm(href='https://serve-it.jp/miyagiprocon/howto/' target='_blank')
+        img(src='~assets/images/bt_oubo.png')
 </template>
 
 <script>
@@ -46,4 +45,7 @@ export default {
 .show
   opacity 1
   -webkit-transform translate(0px, 0)
+
+.link_applicationForm
+  margin-top 10vmin
 </style>
