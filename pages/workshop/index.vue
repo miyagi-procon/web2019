@@ -55,7 +55,7 @@ export default {
     workshopsJson.workshops.forEach(workshop => {
       const today = new Date()
       const workshopDate = new Date(workshop.date)
-      if (workshopDate <= today) {
+      if (workshopDate < today) {
         pastWorkshops.push(workshop)
       } else {
         futureWorkshops.push(workshop)

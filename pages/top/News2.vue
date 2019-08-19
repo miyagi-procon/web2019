@@ -37,7 +37,9 @@ export default {
   data() {
     let imageWorkshops = []
     workshopsJson.workshops.forEach(workshop => {
-      if (workshop.image) imageWorkshops.push(workshop)
+      const today = new Date()
+      const workshopDate = new Date(workshop.date)
+      if (workshop.image && workshopDate >= today) imageWorkshops.push(workshop)
     })
     imageWorkshops = imageWorkshops.sort((a, b) => {
       const aDate = new Date(a.date)
