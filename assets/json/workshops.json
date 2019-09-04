@@ -155,6 +155,26 @@
       "organizer": "みやぎプロコン実行委員会",
       "image": "0831.jpg",
       "link": "https://serve-it.jp/miyagiprocon/event/190831-01.html"
+    },
+    {
+      "date": "2019/9/28",
+      "day": "土",
+      "title": "プログラミング＆電子工作でオリジナル作品をつくろう！",
+      "subtitle": "締切直前応援企画！作品をつくって応募しちゃおう",
+      "place": "仙台市長町（ルミグラフスタジオ1F）",
+      "organizer": "みやぎプロコン実行委員会",
+      "image": "0928.jpg",
+      "link": "https://serve-it.jp/miyagiprocon/event/190928.html"
+    },
+    {
+      "date": "2019/9/29",
+      "day": "日",
+      "title": "はんだ付けでパソコン組立て＆プログラミングに挑戦しよう",
+      "subtitle": "小中学生ものづくり応援企画！小学2年生から参加OK",
+      "place": "仙台市長町（ルミグラフスタジオ1F）",
+      "organizer": "みやぎプロコン実行委員会",
+      "image": "0929.jpg",
+      "link": "https://serve-it.jp/miyagiprocon/event/190929.html"
     }
   ]
 }
