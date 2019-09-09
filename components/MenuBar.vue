@@ -14,6 +14,9 @@
         li
           a(href="#" class="menubar_item" @click.stop.prevent="storiesClick") コンセプト<br/>ストーリー
         li
+          a(href="https://www.facebook.com/miyagiprocon/" target='_blank' class="menubar_item")
+            img.menu_facebook(src="~assets/images/facebook.png")
+        li
           .hamburger.hamburger-head(v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu, showHumburger: toggleFix }")
             hamburger
 </template>
@@ -110,6 +113,10 @@ export default {
 
 .menu_logo
   height 10vmin
+  padding 0.3rem
+
+.menu_facebook
+  height 7vmin
   padding 0.3rem
 
 .hamburger
