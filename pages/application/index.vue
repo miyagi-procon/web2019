@@ -5,13 +5,9 @@
     .application_container
       h1.application_title <font-awesome-icon icon="check" class="application_icon"/> 応募について
       .application_wrapper
-        .wrapper
-          p.application_description 第1回みやぎプロコンでは、宮城県内の小中学生が作ったプログラム作品を募集します。
-            <br/><span class='text-emphasis'>プログラミングに触れたことがない初心者も大歓迎です。</span>
-            <br/>各地で実施する関連ワークショップに参加して、挑戦してみよう。
-            <br/>
-            <br/>最終審査会＆表彰式は、10月27日(日)仙台高等専門学校広瀬キャンパスで開催！
-            <br/><span class='text-emphasis'>賞品には、ノートパソコンやタブレットなど豪華な副賞も多数！</span>
+        .application_about
+          h1.heading 概要
+          img(:src="require('@/assets/images/about_application.png')")
         detail
         schedule
 </template>
@@ -73,6 +69,19 @@ export default {
   @media screen and (min-width: 740px)
     width 80vw
 
+.application_about
+  max-width 700px
+  display flex
+  flex-direction column
+  justify-content center
+  align-items center
+  margin 10vmin auto
+  @media screen and (max-width: 740px)
+    width 95%
+  @media screen and (min-width: 740px)
+    width 80%
+  >img
+    margin-top 5vmin
 
 .application_description
   font-size 1.3rem
