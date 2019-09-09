@@ -1,7 +1,7 @@
 <template lang="pug">
   section#top
     a.top_container(href='https://serve-it.jp/miyagiprocon/howto/' target='_blank')
-      img(:src="require('@/assets/images/top.jpg')")
+      img(:src="require('@/assets/images/mprocon_0905top.jpg')")
     .menubar_wrapper
       menu-bar
 </template>
