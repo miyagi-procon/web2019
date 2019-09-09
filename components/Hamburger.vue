@@ -15,6 +15,8 @@
           a(href="#" class="hamburger_item" @click.stop.prevent="workshopClick") ワークショップ
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="storiesClick") コンセプトストーリー
+        li
+          a(href="https://www.facebook.com/miyagiprocon/" target='_blank' class="hamburger_item") facebookページ
 </template>
 
 <script>
