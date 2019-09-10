@@ -1,6 +1,9 @@
 <template lang="pug">
   section#news
     .wrapper
+      h1.news_title <font-awesome-icon icon="check" class="news_icon"/> 作品応募受付中！
+      a.link_applicationForm(href='https://serve-it.jp/miyagiprocon/howto/' target='_blank')
+        img(src='~assets/images/bt_oubo.png')
       h1.news_title <font-awesome-icon icon="check" class="news_icon"/> ワークショップ開催中！
     .news_container
       .news_wrapper
