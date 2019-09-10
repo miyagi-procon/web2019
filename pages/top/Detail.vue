@@ -18,10 +18,8 @@
             detail-item(
               heading='豪華賞品がいっぱい！'
               subtext='ノートパソコンやタブレットなど、豪華な副賞、協賛賞がたくさんあります。')
-      a.detail_toApplication(href="/application") 応募について見る
-      .detail_flex
-        a.detail_toFile(href="/flyer.pdf") チラシを見る
-        a.detail_toFile(href="/poster.pdf") ポスターを見る
+            .detail_area
+              a.detail_toApplication(href="/application") 応募について見る
 </template>
 
 <script>
@@ -67,7 +65,7 @@ export default {
 .detail_content
   margin 5vmin
   position relative
-  padding-bottom 3vmin
+  // padding-bottom 2vmin
   @media screen and (max-width: 740px)
     width 80vw
   @media screen and (min-width: 740px)
@@ -94,17 +92,27 @@ export default {
 .detail_items
   padding 6rem 4rem 2rem 2rem
 
+.detail_area
+  padding-top 1rem
+  display flex
+  align-items center
+
 .detail_toApplication
-  background-color BG_COLOR_T
-  font-size 1.5rem
+  background-color BASE_COLOR
   padding 1rem
   text-decoration none
   border-radius 1rem
   text-align center
-  margin 2rem 0 2rem
-  color BASE_COLOR
+  margin 2rem auto
+  color BG_COLOR
+  @media screen and (max-width: 740px)
+    font-size 2rem
+    padding 1rem 1rem
+  @media screen and (min-width: 740px)
+    font-size 3rem
+    padding 1rem 4rem
   &:visited
-    color BASE_COLOR
+    color BG_COLOR
 
 .detail_toFile
   background-color BG_COLOR_T
