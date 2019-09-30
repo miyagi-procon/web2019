@@ -50,6 +50,10 @@
               img(src="~assets/images/thinkShake.png")
             a.sponsors_item-silver(href="https://www.folkgw.com/" target="_blank")
               img(src="~assets/images/folk-glocal-works.png")
+        p.text.sponsors_text <span class='text-emphasis'>【相互リンク】</span>
+          .sponsors_bottom.sponsors_wrapper-gold
+            a.sponsors_item-link(href="https://pcn.club/contest/" target="_blank")
+              img(src="~assets/images/pcn_procon.jpg")
 </template>
 
 <script>
@@ -119,35 +123,9 @@ export default {}
   text-align center
   margin-bottom 2vmin
 
-.sponsors_kousen
+.sponsors_item-link
   text-align center
-  @media screen and (max-width: 740px)
-    width 80%
-  @media screen and (min-width: 740px)
-    width 60%
-  margin-bottom 2vmin
-
-.sponsors_pcn
-  text-align center
-  @media screen and (max-width: 740px)
-    width 80%
-  @media screen and (min-width: 740px)
-    width 60%
-  margin-bottom 2vmin
-
-.sponsors_thinkshake
-  text-align center
-  @media screen and (max-width: 740px)
-    width 30%
-  @media screen and (min-width: 740px)
-    width 50%
-  margin-bottom 2vmin
-
-.sponsors_folk
-  text-align center
-  @media screen and (max-width: 740px)
-    width 40%
-  @media screen and (min-width: 740px)
-    width 20%
-  margin-bottom 2vmin
+  width 100%
+  >img
+    text-align center
 </style>
