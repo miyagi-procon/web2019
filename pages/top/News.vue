@@ -5,6 +5,10 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='作品募集を開始！'
+            subtext='作品の募集を開始しました！締め切りは9/30です！<br/>応募詳細は<a href="/application">こちら</a>から。<br/>たくさんの応募、お待ちしております！'
+            date='2019/8/1')
+          news-item(
             heading='ワークショップの申し込み、続々開始してます！'
             subtext='各ワークショップの申し込みが開始しています。<br/><a href="/workshop">ワークショップページ</a>から興味があるワークショップのリンクを辿り、申し込んでみてください！'
             date='2019/7/16')
