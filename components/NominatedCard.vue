@@ -2,11 +2,10 @@
   .nominatedCard_wrapper
     .nominatedCard_image(:style="{backgroundImage: `url(${getImage(image)})` }")
     .nominatedCard_content
-      p.nominatedCard_heading {{ title }}
-      p.nominatedCard_subtext1 <span v-html="tools"></span>
-      .nominatedCard_info
-        .nominatedCard_subtext2
-          p {{ tools }}
+      .nominatedCard_wrapper-content
+        p.nominatedCard_heading {{ title }}
+        p 仕様ツール
+        p.nominatedCard_subtext <span v-html="tools"></span>
 </template>
 
 <script>
@@ -29,16 +28,23 @@ export default {
   flex-direction column
   margin 1rem
   @media screen and (max-width: 740px)
-    width 250px
-    height 300px
+    width 200px
+    height 250px
   @media screen and (min-width: 740px)
     width 450px
     height 500px
+  &-content
+    display flex
+    flex-direction column
+    align-items center
+    width 100%
 
 .nominatedCard_image
-  height 50%
+  height 90%
   object-fit cover
-  background-size cover
+  background-size contain
+  background-repeat no-repeat
+  background-position center center
   display flex
   justify-content flex-start
   align-items flex-end
@@ -63,22 +69,10 @@ export default {
   @media screen and (min-width: 740px)
     font-size 1.5rem
 
-.nominatedCard_subtext1
+.nominatedCard_subtext
   margin-bottom 1rem
   @media screen and (max-width: 740px)
     font-size 1rem
   @media screen and (min-width: 740px)
     font-size 1.2rem
-
-.nominatedCard_subtext2
-  font-weight 700
-  font-size 1rem
-  width 80%
-  display flex
-  flex-direction column
-  margin 1rem 0
-  // justify-content flex-end
-  // align-items flex-end
-  // text-align right
-  // float right
 </style>
