@@ -5,6 +5,10 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='ノミネート作品が決定！'
+            subtext='一次審査を勝ち残った<a href="/nominated">ノミネート作品</a>が決定しました！<br/>最終審査会は10月27日（日）12:30～15:30、仙台高等専門学校 広瀬キャンパスにて行われます！'
+            date='2019/10/10')
+          news-item(
             heading='【最終審査会＆表彰式について】'
             subtext=`日時：10月27日（日）12:30～15:30
                     <br/>会場：仙台高等専門学校 広瀬キャンパス 創造教育棟 3F
