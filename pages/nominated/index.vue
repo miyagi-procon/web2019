@@ -13,7 +13,7 @@
             :tools="nominated.tools"
             :image="nominated.image"
           )
-        p.nominated_text ゲーム・ソフトウェア部門
+        p.nominated_text.nominated_spacer ゲーム・ソフトウェア部門
         .nominated_lists
           nominated-card(
             v-for="(nominated, index) in software"
@@ -102,4 +102,7 @@ export default {
   flex-direction row
   justify-content center
   flex-wrap wrap
+
+.nominated_spacer
+  margin-top 10rem
 </style>

@@ -31,8 +31,8 @@ export default {
     width 200px
     height 250px
   @media screen and (min-width: 740px)
-    width 450px
-    height 500px
+    width 400px
+    height 450px
   &-content
     display flex
     flex-direction column
