@@ -4,7 +4,7 @@
     .nominatedCard_content
       .nominatedCard_wrapper-content
         p.nominatedCard_heading {{ title }}
-        p 仕様ツール
+        p 使用ツール
         p.nominatedCard_subtext <span v-html="tools"></span>
 </template>
 
