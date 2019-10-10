@@ -10,7 +10,7 @@
         li
           a(href="#" class="menubar_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="#" class="menubar_item" @click.stop.prevent="workshopClick") ワークショップ
+          a(href="#" class="menubar_item" @click.stop.prevent="nominatedClick") ノミネート作品
         li
           a(href="#" class="menubar_item" @click.stop.prevent="storiesClick") コンセプト<br/>ストーリー
         li
@@ -60,6 +60,9 @@ export default {
     },
     workshopClick: function() {
       this.$router.push('/workshop')
+    },
+    nominatedClick: function() {
+      this.$router.push('/nominated')
     },
     topClick: function(buttonName) {
       if (process.browser) {
