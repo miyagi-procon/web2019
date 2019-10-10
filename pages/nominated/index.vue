@@ -9,32 +9,17 @@
         .nominated_lists
           nominated-card(
             v-for="(nominated, index) in electronics"
-            :date="nominated.date"
-            :day="nominated.day"
-            :date2="nominated.date2"
-            :day2="nominated.day2"
             :title="nominated.title"
-            :subtitle="nominated.subtitle"
-            :place="nominated.place"
-            :organizer="nominated.organizer"
-            :colorIndex="index"
+            :tools="nominated.tools"
             :image="nominated.image"
-            :link="nominated.link"
           )
         p.nominated_text ゲーム・ソフトウェア部門
         .nominated_lists
           nominated-card(
             v-for="(nominated, index) in software"
-            :date="nominated.date"
-            :day="nominated.day"
-            :date2="nominated.date2"
-            :day2="nominated.day2"
             :title="nominated.title"
-            :subtitle="nominated.subtitle"
-            :place="nominated.place"
-            :organizer="nominated.organizer"
-            :colorIndex="index"
-            :link="nominated.link"
+            :tools="nominated.tools"
+            :image="nominated.image"
           )
 </template>
 
@@ -49,8 +34,8 @@ export default {
     NominatedCard
   },
   data() {
-    let electronics = []
-    let software = []
+    const electronics = []
+    const software = []
     nominatedJson.nominated.forEach(item => {
       if (item.course === 'electronics') {
         electronics.push(item)

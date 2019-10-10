@@ -11,11 +11,7 @@
 
 <script>
 export default {
-  props: [
-    'title',
-    'tools',
-    'image'
-  ],
+  props: ['title', 'tools', 'image'],
   methods: {
     getImage: function(path) {
       return path
