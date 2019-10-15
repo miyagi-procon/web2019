@@ -6,11 +6,11 @@
         .news_content
           news-item(
             heading='表彰式会場特別ワークショップ事前予約受付中！'
-            subtext='拍手ロボット「ビッグクラッピーナノ？をつくろう」電子工作ワークショップの予約は<a href="https://miyagi-procon.jp/2019/award/191027ws.html" target="_blank">こちら</a>'
+            subtext='拍手ロボット「ビッグクラッピーナノ？をつくろう」電子工作ワークショップの予約は<a href="https://miyagi-procon.jp/2019/award/191027ws.html">こちら</a>'
             date='2019/10/16')
           news-item(
             heading='【10/27最終審査会＆表彰式について】'
-            subtext='当日のプログラム＆タイムスケジュールのご案内は<a href="https://miyagi-procon.jp/2019/award/" target="_blank">こちら</a>'
+            subtext='当日のプログラム＆タイムスケジュールのご案内は<a href="https://miyagi-procon.jp/2019/award/">こちら</a>'
             date='2019/10/16')
           news-item(
             heading='ノミネート作品が決定！'

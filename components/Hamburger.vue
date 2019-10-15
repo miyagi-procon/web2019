@@ -9,8 +9,10 @@
       ul(class='hamburger_items')
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="aboutClick") 「みやぎプロコン」って？
+        //- li
+        //-   a(href="#" class="hamburger_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="#" class="hamburger_item" @click.stop.prevent="applicationClick") 応募について
+          a(href="https://miyagi-procon.jp/2019/award/" class="hamburger_item") 表彰式について
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="nominatedClick") ノミネート作品
         li

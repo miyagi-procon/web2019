@@ -7,8 +7,10 @@
             img.menu_logo(src="~assets/images/logo2.png")
         li
           a(href="#" class="menubar_item" @click.stop.prevent="aboutClick") みやぎプロコンって？
+        //- li
+        //-   a(href="#" class="menubar_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="#" class="menubar_item" @click.stop.prevent="applicationClick") 応募について
+          a(href="https://miyagi-procon.jp/2019/award/" class="menubar_item") 表彰式について
         li
           a(href="#" class="menubar_item" @click.stop.prevent="nominatedClick") ノミネート作品
         li
