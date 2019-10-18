@@ -50,6 +50,8 @@
               img(src="~assets/images/thinkShake.png")
             a.sponsors_item-silver(href="https://www.folkgw.com/" target="_blank")
               img(src="~assets/images/folk-glocal-works.png")
+            a.sponsors_item-silver(href="https://smiling-studio.com/" target="_blank")
+              img(src="~assets/images/smiling.png")
         p.text.sponsors_text <span class='text-emphasis'>【相互リンク】</span>
           .sponsors_bottom.sponsors_wrapper-gold
             a.sponsors_item-link(href="https://pcn.club/contest/" target="_blank")
