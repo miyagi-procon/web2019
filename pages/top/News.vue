@@ -5,6 +5,14 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='最優秀賞と優秀賞の副賞発表！'
+            subtext='各部門の最優秀賞と優秀賞には、富士通株式会社 東北支社 様よりご協賛いただいた下記のノートPCが副賞として贈呈されます。<br/>機種：ＬＩＦＥＢＯＯＫ ＵＨ７５／Ｄ２'
+            date='2019/10/18')
+          news-item(
+            heading='表彰式当日のフォトスポンサーが決定！'
+            subtext='第1回みやぎプロコン表彰式の写真撮影をスマイリングスタジオ さんにご協力いただきます。<br/>スマイリングスタジオ（仙台市青葉区栗生）<a href="https://smiling-studio.com/" target="_blank">https://smiling-studio.com/</a>'
+            date='2019/10/18')
+          news-item(
             heading='表彰式会場特別ワークショップ事前予約受付中！'
             subtext='拍手ロボット「ビッグクラッピーナノ？をつくろう」電子工作ワークショップの予約は<a href="https://miyagi-procon.jp/2019/award/191027ws.html">こちら</a>'
             date='2019/10/16')
