@@ -14,10 +14,13 @@
             img(src="~assets/images/tresure.jpg")
           a.sponsors_item-gold(href="http://it-p.jp/" target="_blank")
             img(src="~assets/images/itp.jpg")
-          .sponsors_wrapper-bronze
-            p.sponsors_bronze 株式会社交宣
-            p.sponsors_bronze 株式会社日立製作所 東北支社
-            p.sponsors_bronze 錦ケ丘ヒルサイドモール
+        .sponsors_wrapper-gold.sponsors_bottom
+          a.sponsors_item-silver2(href="http://taxprofessions.jp/" target="_blank")
+            img(src="~assets/images/taxprofessions.png")
+        .sponsors_wrapper-bronze.sponsors_bottom
+          p.sponsors_bronze 株式会社交宣
+          p.sponsors_bronze 株式会社日立製作所 東北支社
+          p.sponsors_bronze 錦ケ丘ヒルサイドモール
 
       .sponsors_wrapper
         p.text.sponsors_text <span class='text-emphasis'>【後援】</span>
@@ -105,7 +108,7 @@ export default {}
 
 .sponsors_item-gold
   text-align center
-  width 60%
+  width 80%
   max-width 500px
   >img
     text-align center
@@ -114,6 +117,15 @@ export default {}
 .sponsors_item-silver
   text-align center
   width 50%
+  margin-bottom 1rem
+  font-size 1.2rem
+  >img
+    text-align center
+    margin-bottom 2vmin
+
+.sponsors_item-silver2
+  text-align center
+  width 33%
   margin-bottom 1rem
   font-size 1.2rem
   >img
