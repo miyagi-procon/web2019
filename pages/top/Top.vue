@@ -1,6 +1,6 @@
 <template lang="pug">
   section#top
-    a.top_container(href='https://serve-it.jp/miyagiprocon/howto/' target='_blank')
+    a.top_container(href='https://miyagi-procon.jp/2019/award/')
       img(:src="require('@/assets/images/top2.jpg')")
     .menubar_wrapper
       menu-bar
