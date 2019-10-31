@@ -14,7 +14,9 @@
         li
           a(href="https://miyagi-procon.jp/2019/award/" class="hamburger_item") 表彰式について
         li
-          a(href="#" class="hamburger_item" @click.stop.prevent="nominatedClick") ノミネート作品
+          a(href="https://miyagi-procon.jp/2019/award/result.html" class="hamburger_item") 結果発表
+        //- li
+        //-   a(href="#" class="hamburger_item" @click.stop.prevent="nominatedClick") ノミネート作品
         li
           a(href="#" class="hamburger_item" @click.stop.prevent="storiesClick") コンセプトストーリー
         li
