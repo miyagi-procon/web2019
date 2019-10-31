@@ -5,6 +5,14 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='表彰式会場での忘れ物について'
+            subtext='10月27日（日）の表彰式会場で『水筒』（水色の水筒／黒の麻生地でできたカバー付き）の落とし物がありました。御心当たりのある方は事務局までお問合せください。<br/>＜問合せ先＞<br/><a href="mailto:support@miyagi-procon.jp">support@miyagi-procon.jp</a>'
+            date='2019/10/31')
+          news-item(
+            heading='第1回みやぎプロコン受賞作品発表！'
+            subtext='2019年10月27日に開催された最終審査会にて選定された各賞の受賞作品は<a href="https://miyagi-procon.jp/2019/award/result.html">こちら。</a><br/>なお今回ご応募いただいた皆様へは、後日みやぎプロコンオリジナルグッズを送付いたします。'
+            date='2019/10/31')
+          news-item(
             heading='表彰式会場特別ワークショップは、応募を締め切りました。'
             subtext='10/27(日)表彰式会場で行う電子工作ワークショップ<br/>「ビッグクラッピーナノ？をつくろう」は定員に達したため、応募を締め切りました。<br/>※当日キャンセルが出た場合のみ、当日予約を受け付けいたします。<br/>※事前予約された方は、当日のご案内メールにてお送りしておりますのでご確認ください。'
             date='2019/10/21')
