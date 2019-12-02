@@ -5,6 +5,10 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='子どもたちの作品を応援しよう！「第1回みやぎプロコンweb投票」実施!!'
+            subtext='第1回みやぎプロコンでノミネートされた作品から、あなたが素敵だなと思う作品に投票してください。<a href="https://miyagi-procon.jp/2019/award/vote/">投票はこちら</a>'
+            date='2019/12/3')
+          news-item(
             heading='表彰式会場での忘れ物について'
             subtext='10月27日（日）の表彰式会場で『水筒』（水色の水筒／黒の麻生地でできたカバー付き）の落とし物がありました。御心当たりのある方は事務局までお問合せください。<br/>＜問合せ先＞<br/><a href="mailto:support@miyagi-procon.jp">support@miyagi-procon.jp</a>'
             date='2019/10/31')
