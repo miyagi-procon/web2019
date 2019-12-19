@@ -10,7 +10,7 @@
         //- li
         //-   a(href="#" class="menubar_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="https://miyagi-procon.jp/2019/award/" class="menubar_item") 表彰式について
+          a(href="https://miyagi-procon.jp/2019/award/outline.html" class="menubar_item") 表彰式について
         li
           a(href="https://miyagi-procon.jp/2019/award/result.html" class="menubar_item") 結果発表
         //- li

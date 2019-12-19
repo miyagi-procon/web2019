@@ -12,7 +12,7 @@
         //- li
         //-   a(href="#" class="hamburger_item" @click.stop.prevent="applicationClick") 応募について
         li
-          a(href="https://miyagi-procon.jp/2019/award/" class="hamburger_item") 表彰式について
+          a(href="https://miyagi-procon.jp/2019/award/outline.html" class="hamburger_item") 表彰式について
         li
           a(href="https://miyagi-procon.jp/2019/award/result.html" class="hamburger_item") 結果発表
         //- li
