@@ -1,7 +1,7 @@
 <template lang="pug">
   section#top
-    a.top_container(href='https://miyagi-procon.jp/2019/award/vote/')
-      img(:src="require('@/assets/images/vote_main-100.jpg')")
+    a.top_container(href='https://miyagi-procon.jp/2019/award/ev20200229.html')
+      img(:src="require('@/assets/images/top4.jpg')")
     .menubar_wrapper
       menu-bar
 </template>

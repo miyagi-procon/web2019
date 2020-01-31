@@ -5,6 +5,10 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='第2回みやぎプロコンプレイベント開催！'
+            subtext='2/29（土）第2回みやぎプロコンプレイベント開催！<br/>会場：錦ケ丘ヒルサイドモール ２F特設会場<br/>===============<br/>【参加受付中】プログラミング体験講座＆電子工作ワークショップ<br/>web投票結果発表＆表彰イベントも同時開催！<br/>＞＞<a href="https://miyagi-procon.jp/2019/award/ev20200229.html">イベント詳細はこちら</a><br/>==============='
+            date='2020/1/31')
+          news-item(
             heading='子どもたちの作品を応援しよう！「第1回みやぎプロコンweb投票」実施!!'
             subtext='第1回みやぎプロコンでノミネートされた作品から、あなたが素敵だなと思う作品に投票してください。<a href="https://miyagi-procon.jp/2019/award/vote/">投票はこちら</a>'
             date='2019/12/3')
