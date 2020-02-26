@@ -5,8 +5,12 @@
       .unvisible(v-bind:class="{ show: showSection }")
         .news_content
           news-item(
+            heading='【重要】2月29日イベント延期のお知らせ'
+            subtext='新型コロナウイルス感染症の影響により、予定しておりました2月29日のイベントは延期することを決定いたしました。<br/>＞＞<a href="https://miyagi-procon.jp/2019/award/ev20200229.html">詳しくはこちら</a>'
+            date='2020/2/26')
+          news-item(
             heading='第2回みやぎプロコンプレイベント開催！'
-            subtext='2/29（土）第2回みやぎプロコンプレイベント開催！<br/>会場：錦ケ丘ヒルサイドモール ２F特設会場<br/>===============<br/>【参加受付中】プログラミング体験講座＆電子工作ワークショップ<br/>web投票結果発表＆表彰イベントも同時開催！<br/>＞＞<a href="https://miyagi-procon.jp/2019/award/ev20200229.html">イベント詳細はこちら</a><br/>==============='
+            subtext='2/29（土）第2回みやぎプロコンプレイベント開催！<br/>会場：錦ケ丘ヒルサイドモール ２F特設会場<br/>【参加受付中】プログラミング体験講座＆電子工作ワークショップ<br/>web投票結果発表＆表彰イベントも同時開催！<br/>＞＞<a href="https://miyagi-procon.jp/2019/award/ev20200229.html">イベント詳細はこちら</a>'
             date='2020/1/31')
           news-item(
             heading='子どもたちの作品を応援しよう！「第1回みやぎプロコンweb投票」実施!!'
