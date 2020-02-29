@@ -84,6 +84,7 @@ export default {
   display none
   &-open
     display block
+    z-index 200
 
 .hamburger_items
   display flex

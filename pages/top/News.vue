@@ -89,7 +89,8 @@ export default {
   mixins: [appearMixin],
   computed: {
     showSection() {
-      return this.isShown('news')
+      // return this.isShown('news')
+      return true
     }
   }
 }

@@ -1,7 +1,8 @@
 <template lang="pug">
   section#top
-    a.top_container(href='https://miyagi-procon.jp/2019/award/ev20200229.html')
-      img(:src="require('@/assets/images/top5.jpg')")
+    //- a.top_container(href='https://miyagi-procon.jp/2019/award/ev20200229.html')
+    //-   img(:src="require('@/assets/images/top5.jpg')")
+    .for_noimage
     .menubar_wrapper
       menu-bar
 </template>
@@ -25,4 +26,7 @@ export default {
   width 100%
   >img
     width 100%
+
+.for_noimage
+  height 1px
 </style>

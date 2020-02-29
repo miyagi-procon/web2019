@@ -1,6 +1,6 @@
 <template lang="pug">
   menu#menubar
-    nav(v-bind:class="{ isFix: toggleFix }")
+    nav(v-bind:class="{ isFix: toggleFix || $store.state.toggleMenu }")
       ul(class='menubar_items')
         li
           router-link(to="/")
@@ -21,7 +21,7 @@
           a(href="https://www.facebook.com/miyagiprocon/" target='_blank' class="menubar_item")
             img.menu_facebook(src="~assets/images/facebook.png")
         li
-          .hamburger.hamburger-head(v-bind:class="{ 'hamburger_menu-open': $store.state.toggleMenu, showHumburger: toggleFix }")
+          .hamburger
             hamburger
 </template>
 
@@ -129,9 +129,6 @@ export default {
 .hamburger
   z-index 200
   display none
-.hamburger_menu-open
-  z-index 300
-.showHumburger
   @media screen and (max-width: 740px)
     display block
 </style>
